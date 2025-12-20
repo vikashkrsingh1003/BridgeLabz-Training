@@ -37,13 +37,13 @@ class EmployeeBonus {
             totalOldSalary = totalOldSalary + salary[i];
         }
 
-        // Calculate bonus and new salary using for-loop
+        // Calculate bonus and new salary using for loop
         for (int i = 0; i < 10; i++) {
             if (yearsOfService[i] > 5) {
-                bonus[i] = salary[i] * 0.05; // 5% bonus
+                bonus[i] = salary[i] * 0.05; 
             } 
             else {
-                bonus[i] = salary[i] * 0.02; // 2% bonus
+                bonus[i] = salary[i] * 0.02; 
             }
             newSalary[i] = salary[i] + bonus[i];
             totalBonus = totalBonus + bonus[i];
