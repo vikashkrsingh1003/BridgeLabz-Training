@@ -31,7 +31,7 @@ BridgeLabz-Training/
 •⁠  ⁠Practiced adding, committing, and pushing Java files to GitHub.
 
 🔗 *Code Link:*  
-👉 [Day 2 – Basic Java Programs]([https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/program-prerequisite])
+👉 [Day 2 – Basic Java Programs (https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/program-prerequisite)
 
 ### 🗓 Day 3 – Programming Elements in Java  
 *(Date: 18-Dec-2025)*
