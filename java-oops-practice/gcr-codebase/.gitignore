@@ -24,3 +24,20 @@ target/
 .DS_Store
 
 Thumbs.db
+# =========================
+# Eclipse Workspace
+# =========================
+.metadata/
+
+# =========================
+# Eclipse Project Files
+# =========================
+JavaOopsConcepts/Users:.fileloc
+JavaOopsConcepts/project
+JavaOopsConcepts/classpath
+
+# =========================
+# Java Build Output
+# =========================
+JavaOopsConcepts/bin/
+JavaOopsConcepts/src/module-info.java
