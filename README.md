@@ -138,5 +138,17 @@ BridgeLabz-Training/
 🔗 *Code Link:*  
 👉 [Day 3 – scenario based questions](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
 
+---
+
+## Day 5 –  Object and Classes 
+*(Date: 26-Dec-2025)*
+•⁠  ⁠Learned the working of classes and objects in Java
+•⁠  ⁠Solved Object and class-based problems, level 1 and 2.
+•⁠  ⁠Organised programs into proper folders.
+•⁠  ⁠Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+👉 [Day 5 – Object and Classes Programs](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/classandobject)
+
 
 
