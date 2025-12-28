@@ -109,3 +109,21 @@ BridgeLabz-Training/
 👉 [Day 1 – Methods](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Java-Methods))
 👉 [Day 1 – String](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Strings)
 
+---
+
+## Day 2 – Built-in Functions & Extra Practice  
+*(Date: 23-Dec-2025)*
+
+•⁠  ⁠Practiced Java built-in functions.
+•⁠  ⁠Implemented utility programs such as:
+  - Temperature Converter
+•⁠  ⁠Improved understanding of:
+  - Input handling
+  - Type conversion
+•⁠  ⁠Organized programs into proper folders.
+•⁠  ⁠Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+👉 [Day 2 – Built-in Functions](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Extras)
+
+
