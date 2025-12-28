@@ -126,4 +126,17 @@ BridgeLabz-Training/
 🔗 *Code Link:*  
 👉 [Day 2 – Built-in Functions](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Extras)
 
+---
+
+## Day 3 – solved scenario based questions  
+*(Date: 24-Dec-2025)*
+
+•⁠  ⁠solved scenario based questions.
+•⁠  ⁠Organized programs into proper folders.
+•⁠  ⁠Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+👉 [Day 3 – scenario based questions](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
+
+
 
