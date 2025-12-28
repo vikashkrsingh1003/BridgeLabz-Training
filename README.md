@@ -150,5 +150,18 @@ BridgeLabz-Training/
 🔗 *Code Link:*  
 👉 [Day 5 – Object and Classes Programs](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/classandobject)
 
+---
+
+## Day 6 - Java Constructors, Instance vs. Class Variables, Access Modifiers Concepts 
+*(Date: 27-Dec-2025)*
+•⁠  ⁠Learned the Java Constructors, Instance vs. Class Variables, Access Modifiers Concepts in Java
+•⁠  ⁠(Parameterised, Non-parameterised, and Copy constructor)
+•⁠  ⁠Solved constructor-based problems level 1.
+•⁠  ⁠Organised programs into proper folders.
+•⁠  ⁠Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+👉 [Day 6 – Constructors based Programs](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/constructors/level1)
+
 
 
