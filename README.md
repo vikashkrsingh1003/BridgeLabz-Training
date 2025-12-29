@@ -85,3 +85,83 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*  
 👉 [Day 5 – Arrays](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
+
+---
+
+## Week 2: strings & methods, extras, scenario-based & oops concepts
+
+## Day 1 – Strings & Methods  
+*(Date: 22-Dec-2025)*
+
+•⁠  ⁠Studied String concepts:
+  - String creation
+  - String methods
+  - Character processing
+•⁠  ⁠Implemented programs for string manipulation.
+•⁠  ⁠Studied Java methods:
+  - Method declaration
+  - Method calling
+  - Parameter passing
+•⁠  ⁠Practiced reusable logic using methods.
+•⁠  ⁠Committed and pushed solutions to the repository.
+
+🔗 *Code Link:*  
+👉 [Day 1 – Methods](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Java-Methods))
+👉 [Day 1 – String](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Strings)
+
+---
+
+## Day 2 – Built-in Functions & Extra Practice  
+*(Date: 23-Dec-2025)*
+
+•⁠  ⁠Practiced Java built-in functions.
+•⁠  ⁠Implemented utility programs such as:
+  - Temperature Converter
+•⁠  ⁠Improved understanding of:
+  - Input handling
+  - Type conversion
+•⁠  ⁠Organized programs into proper folders.
+•⁠  ⁠Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+👉 [Day 2 – Built-in Functions](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Extras)
+
+---
+
+## Day 3 – solved scenario based questions  
+*(Date: 24-Dec-2025)*
+
+•⁠  ⁠solved scenario based questions.
+•⁠  ⁠Organized programs into proper folders.
+•⁠  ⁠Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+👉 [Day 3 – scenario based questions](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
+
+---
+
+## Day 5 –  Object and Classes 
+*(Date: 26-Dec-2025)*
+•⁠  ⁠Learned the working of classes and objects in Java
+•⁠  ⁠Solved Object and class-based problems, level 1 and 2.
+•⁠  ⁠Organised programs into proper folders.
+•⁠  ⁠Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+👉 [Day 5 – Object and Classes Programs](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/classandobject)
+
+---
+
+## Day 6 - Java Constructors, Instance vs. Class Variables, Access Modifiers Concepts 
+*(Date: 27-Dec-2025)*
+•⁠  ⁠Learned the Java Constructors, Instance vs. Class Variables, Access Modifiers Concepts in Java
+•⁠  ⁠(Parameterised, Non-parameterised, and Copy constructor)
+•⁠  ⁠Solved constructor-based problems level 1.
+•⁠  ⁠Organised programs into proper folders.
+•⁠  ⁠Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+👉 [Day 6 – Constructors based Programs](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/constructors/level1)
+
+
+
