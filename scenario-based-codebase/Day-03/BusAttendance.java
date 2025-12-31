@@ -29,6 +29,7 @@ public class BusAttendance {
             System.out.println(name + " : " + status);
             
         }
+        //Dispay total number of absent student
         System.out.println("total number of absent student :"+count);
 
         sc.close();
