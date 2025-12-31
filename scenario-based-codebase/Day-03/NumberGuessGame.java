@@ -11,7 +11,7 @@ public class NumberGuessGame{
 
         do{
             Scanner sc = new Scanner(System.in);
-            System.out.println("Enter your Guess number : ");
+            System.out.println("Enter your Guess number : ")
             int guessNum = sc.nextInt();
 
             if(guessNum == number){
