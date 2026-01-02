@@ -1,6 +1,7 @@
 package com.day02.hospitalmanagementsystem;
 
 public class Patient {
+	
     protected int patientId;
     protected String name;
     private String medicalHistory;   // sensitive data

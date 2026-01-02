@@ -12,8 +12,10 @@ public class Doctor {
     }
 
     public void displayInfo() {
+    	System.out.println("----------------------------------------------------");
         System.out.println(
             "Doctor: " + name + ", Specialization: " + specialization
         );
+        System.out.println("----------------------------------------------------");
     }
 }

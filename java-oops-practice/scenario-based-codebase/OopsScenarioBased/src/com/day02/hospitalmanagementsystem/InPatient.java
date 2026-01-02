@@ -10,7 +10,9 @@ public class InPatient extends Patient {
 
     @Override
     public void displayInfo() {
+    	System.out.println("----------------------------------------------------");
         System.out.println(getSummary() + ", Days Admitted: " + daysAdmitted);
+       
     }
 }
 
