@@ -1,0 +1,9 @@
+package com.inheritance.singleinheritance.smarthome;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Thermostat thermostat = new Thermostat("T1001", "ON", 24);
+        thermostat.displayStatus();
+    }
+}
