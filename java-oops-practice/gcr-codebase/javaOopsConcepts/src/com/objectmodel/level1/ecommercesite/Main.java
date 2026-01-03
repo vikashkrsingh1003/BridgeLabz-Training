@@ -1,7 +1,7 @@
 package com.objectmodel.level1.ecommercesite;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Customer customer = new Customer(101, "Alice");
 
         Product p1 = new Product(1, "Laptop", 800.0);
@@ -17,6 +17,6 @@ public class Main {
         order1.addProduct(p3);
 
         order1.showOrderDetails();
-    }
+   }
 }
 
