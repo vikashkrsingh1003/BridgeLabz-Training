@@ -1,6 +1,5 @@
 package com.linkedlist.singlylinkedlist.inventorymanagementsystem;
 
-import com.linkedlist.singlylinkedlist.studentrecordmanagement.StudentNode;
 
 public class ItemLinkedList {
 
