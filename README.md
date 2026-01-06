@@ -234,6 +234,37 @@ Used appliance inheritance and interface-driven device control.
 
 ---
 
+## 📅 Day 2 – Advanced OOPS & Polymorphism
+**Date:** 3-Jan-2026
+
+### Topics Covered
+- Interface-driven architecture
+- Secure data handling using encapsulation
+- Runtime polymorphism
+- Operator-based calculations
+- Backend-oriented class design
+
+### Problems Solved
+**CabbyGo – Ride-Hailing Application**  
+Backend logic for managing vehicles, drivers, and ride booking.  
+Implemented vehicle-type polymorphism and operator-based fare calculation.
+
+**MyBank – Customer Account Management System**  
+Core banking module for accounts, deposits, and interest calculation.  
+Applied account inheritance and polymorphic interest logic.
+
+### Practice Summary
+- Built backend logic for scalable applications
+- Applied polymorphism across vehicle and account types
+- Encapsulated sensitive data such as fare, balance, and ratings
+- Implemented clean separation of responsibilities
+
+🔗 **Code Link:**  
+Day 2 – Advanced OOPS
+[Scenario Based in Java](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day02)
+
+---
+
 
 ## ✅ Module 2 Summary
 
