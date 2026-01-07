@@ -77,4 +77,46 @@ Solved **10 problems** based on Stack, Queue, and HashMap concepts.
 📂 **Code Folder:**  
 `Day-02 – Stack, Queue & Hashing Programs`[(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/stackandqueues)]
 
+---
+##  Day 3: Sorting Algorithms  
+**Date:** 5 January 2026  
 
+##  Topics Covered
+
+###  Sorting Fundamentals
+- Comparison-based vs non-comparison-based sorting  
+- Time and space complexity trade-offs  
+- Applying sorting logic to real-world scenarios  
+
+###  Comparison-Based Sorting Algorithms
+- Bubble Sort  
+- Insertion Sort  
+- Selection Sort  
+- Merge Sort  
+- Quick Sort  
+- Heap Sort  
+
+###  Non-Comparison-Based Sorting
+- Counting Sort  
+
+###  Best Practices
+- Chose algorithms based on data size and constraints  
+- Applied **stable vs unstable sorting** concepts  
+- Optimized performance using **divide-and-conquer** strategies  
+
+---
+
+##  Practice Summary
+
+Solved **7 sorting-based problems** using different algorithms:
+
+1. Bubble Sort – Sort Student Marks  
+2. Insertion Sort – Sort Employee IDs  
+3. Merge Sort – Sort Book Prices  
+4. Quick Sort – Sort Product Prices  
+5. Selection Sort – Sort Exam Scores  
+6. Heap Sort – Sort Job Applicants by Salary  
+7. Counting Sort – Sort Student Ages  
+
+📂 **Code Folder:**  
+`Week 03 – Sorting Algorithms [()]
