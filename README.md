@@ -142,7 +142,7 @@ BridgeLabz-Training/
 
 ---
 
-## Module 2 – Object-Oriented Programming (OOPs) in Java
+## Week 03 – Object-Oriented Programming (OOPs) in Java
 
 This module focused on strengthening **Object-Oriented Programming (OOP)** skills in Java through  
 **hands-on practice**, **real-world problem modeling**, and **structured code organization**.  
@@ -423,7 +423,7 @@ Day 2 – Advanced OOPS
  **Next:** Advanced Java & Design Patterns
 
 ---
-## Module 3 – data structure and algorithm in Java
+## Week 04 – data structure and algorithm in Java
 ---
 ## Day 1 – Linked List (Singly, Doubly & Circular)
 **Date:** 2 January 2026
