@@ -332,6 +332,82 @@ Emphasis was placed on identifying relationships and visualizing system structur
 👉 [Encapsulation, Polymorphism & Interfaces]()
 
 ---
+# Java OOPS – Scenario Based Practice
+
+## Day 1 – Real-World OOPS Scenarios
+**Date:** 2-Jan-2026
+
+### Topics Covered
+- Classes, Objects, Variables & Methods
+- Constructors & Constructor Overloading
+- Access Modifiers and Encapsulation
+- Interfaces and Abstraction
+- Inheritance and Polymorphism
+- Operator-based business logic
+
+### Problems Solved
+**Hospital Patient Management System**  
+Hospital module to register patients, assign doctors, and manage billing.  
+Focused on encapsulation, inheritance, and interface-based billing logic.
+
+**Vehicle Rental Application**  
+System to rent bikes, cars, and trucks to customers.  
+Implemented vehicle hierarchy and polymorphic rent calculation.
+
+**University Course Enrollment System**  
+Platform for student enrollment and faculty grading.  
+Applied inheritance, encapsulated GPA handling, and grading interfaces.
+
+**E-Wallet Application**  
+Digital wallet for loading money and transferring funds.  
+Ensured secure balance handling and polymorphic transaction logic.
+
+**Smart Home Automation System**  
+System to control smart devices like lights, fans, and ACs.  
+Used appliance inheritance and interface-driven device control.
+
+### Practice Summary
+- Designed real-world Java systems using OOPS principles
+- Applied encapsulation to protect sensitive data
+- Used inheritance for hierarchical modeling
+- Implemented interfaces to achieve abstraction
+- Leveraged polymorphism for dynamic behavior
+
+🔗 **Code Link:**  
+ [Scenario Based in Java](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day02)
+
+---
+
+## Day 2 – Advanced OOPS & Polymorphism
+**Date:** 3-Jan-2026
+
+### Topics Covered
+- Interface-driven architecture
+- Secure data handling using encapsulation
+- Runtime polymorphism
+- Operator-based calculations
+- Backend-oriented class design
+
+### Problems Solved
+**CabbyGo – Ride-Hailing Application**  
+Backend logic for managing vehicles, drivers, and ride booking.  
+Implemented vehicle-type polymorphism and operator-based fare calculation.
+
+**MyBank – Customer Account Management System**  
+Core banking module for accounts, deposits, and interest calculation.  
+Applied account inheritance and polymorphic interest logic.
+
+### Practice Summary
+- Built backend logic for scalable applications
+- Applied polymorphism across vehicle and account types
+- Encapsulated sensitive data such as fare, balance, and ratings
+- Implemented clean separation of responsibilities
+
+🔗 **Code Link:**  
+Day 2 – Advanced OOPS
+[Scenario Based in Java](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day02)
+
+---
 
 ##  Module 2 Summary
 
