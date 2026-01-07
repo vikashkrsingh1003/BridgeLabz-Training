@@ -56,18 +56,18 @@
 
 ---
 
-## ✅ Practice Summary
+##  Practice Summary
 
 Solved **10 problems** based on Stack, Queue, and HashMap concepts.
 
-### 🧮 Stack & Queue Problems
+### Stack & Queue Problems
 1. Queue Using Two Stacks  
 2. Sort a Stack Using Recursion  
 3. Stock Span Problem  
 4. Sliding Window Maximum  
 5. Circular Tour (Petrol Pump Problem)  
 
-### 🧮 Hash Map & Hashing Problems
+### Hash Map & Hashing Problems
 6. Find All Subarrays with Zero Sum  
 7. Check for a Pair with Given Sum  
 8. Longest Consecutive Sequence  
