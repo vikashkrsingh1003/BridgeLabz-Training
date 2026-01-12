@@ -120,3 +120,33 @@ Solved **7 sorting-based problems** using different algorithms:
 
 📂 **Code Folder:**  
 `Week 03 – Sorting Algorithms [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/sortingalgorithms)]
+
+---
+## Day 4 – String Handling, File Reading & Searching Algorithms  
+**Date:** 06-Jan-2026  
+
+---
+### String Handling (Mutable Strings)
+1. StringBuilder
+2. StringBuffer
+---
+
+###  File Reading (Character Streams)
+
+1. FileReader
+2. InputStreamReader
+---
+
+### Searching Algorithms Implemented
+
+1. Linear Search
+2. Binary Search
+---
+
+
+###  Code Links
+Week 03 – Searching Algorithms [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/searching)]
+
+
+
+
