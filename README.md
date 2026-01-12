@@ -147,6 +147,44 @@ Solved **7 sorting-based problems** using different algorithms:
 ###  Code Links
 Week 03 – Searching Algorithms [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/searching)]
 
+---
+## Day 5 – Algorithm Analysis & Performance Evaluation  
+**Date:** 07-Jan-2026  
+
+---
+
+### Algorithm Analysis Concepts
+1. Runtime Analysis  
+2. Time Complexity  
+3. Space Complexity  
+
+---
+
+### Complexity Measurement
+1. Big-O Notation  
+2. Best Case Analysis  
+3. Worst Case Analysis  
+4. Average Case Analysis  
+
+---
+
+### Performance Evaluation
+1. Comparing Multiple Approaches  
+2. Identifying Bottlenecks  
+3. Optimization Trade-offs  
+
+---
+
+### Practical Application
+1. Analyzing Java Programs  
+2. Applying Optimization Techniques  
+3. Testing Performance with Sample Inputs  
+
+---
+
+### Code Links
+Week 03 – Algorithm Analysis  
+[(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/analysis)]
 
 
 
