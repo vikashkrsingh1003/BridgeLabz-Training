@@ -119,4 +119,4 @@ Solved **7 sorting-based problems** using different algorithms:
 7. Counting Sort – Sort Student Ages  
 
 📂 **Code Folder:**  
-`Week 03 – Sorting Algorithms [()]
+`Week 03 – Sorting Algorithms [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/sortingalgorithms)]
