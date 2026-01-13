@@ -264,6 +264,35 @@ Day 2 – Advanced OOPS
 [Scenario Based in Java](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day02)
 
 ---
+Day 3 – Enterprise-Style OOPS Applications  
+Date: 5-Jan-2026
+
+## Topics Covered
+- Base class design and inheritance  
+- Interface-based operations  
+- Secure state management  
+- Operator-based calculations  
+- Polymorphic method implementations  
+
+## Problems Solved
+
+### CampusConnect – College Information System
+Academic portal to manage students, faculty, and course enrollment.  
+Used base class inheritance, interface-driven actions, and GPA calculation.
+
+### SwiftCart – Grocery Shopping Application
+Backend cart and checkout system for an online grocery platform.  
+Implemented product inheritance and polymorphic discount application.
+
+## Practice Summary
+- Modeled enterprise-level Java applications  
+- Applied strong encapsulation for grades and prices  
+- Used interfaces for extensibility  
+- Implemented polymorphic behaviors for users and products  
+
+🔗 **Code Link:**  
+ Day 3 – Enterprise OOPS [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day03)]
+
 
 
 ## ✅ Module 2 Summary
