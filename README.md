@@ -1,7 +1,7 @@
 # BridgeLabz-Training
 
 ## Week 1: Git, GitHub & Java Programming Fundamentals
-### 📅 Day 1 – Git & GitHub Setup 
+###  Day 1 – Git & GitHub Setup 
 *(Date: 16-Dec-2025)
 
 •⁠  ⁠Installed and configured Git.
@@ -25,17 +25,17 @@ BridgeLabz-Training/
 •⁠  ⁠Successfully pushed files to the remote repository.
 
 ---
-### 🗓 Day 2 – Git Practice & Basic Java Programs  
+###  Day 2 – Git Practice & Basic Java Programs  
 *(Date: 17-Dec-2025)*
 
 •⁠  ⁠Practiced Git workflow to understand commits and version control.
 •⁠  ⁠Solved very basic Java programs to understand syntax and structure.
 •⁠  ⁠Practiced adding, committing, and pushing Java files to GitHub.
 
-🔗 *Code Link:*  
-👉 [Day 2 – Basic Java Programs (https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/program-prerequisite)
+ *Code Link:*  
+ [Day 2 – Basic Java Programs (https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/program-prerequisite)
 
-### 🗓 Day 3 – Programming Elements in Java  
+###  Day 3 – Programming Elements in Java  
 *(Date: 18-Dec-2025)*
 
 •⁠  ⁠Studied Java programming elements:
@@ -45,12 +45,12 @@ BridgeLabz-Training/
 •⁠  ⁠Solved practice problems based on programming elements.
 •⁠  ⁠Committed and pushed solutions to the repository.
 
-🔗 *Code Link:*  
-👉 [Day 3 – Programming Elements](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
+ *Code Link:*  
+ [Day 3 – Programming Elements](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
 
 ---
 
-### 🗓 Day 4 – Control Flow & Logical Constructs  
+###  Day 4 – Control Flow & Logical Constructs  
 *(Date: 19-Dec-2025)*
 
 •⁠  ⁠Studied logical constructs in Java:
@@ -67,12 +67,12 @@ BridgeLabz-Training/
   - Prime number check
 •⁠  ⁠Committed and pushed solutions to the repository.
 
-🔗 *Code Link:*  
-👉 [Day 4 – Control Flow](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows)
+ *Code Link:*  
+ [Day 4 – Control Flow](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows)
 
 ---
 
-### 🗓 Day 5 – Arrays & Basic Problem Solving  
+###  Day 5 – Arrays & Basic Problem Solving  
 *(Date: 20-Dec-2025)*
 
 •⁠  ⁠Studied arrays in Java:
@@ -85,8 +85,8 @@ BridgeLabz-Training/
 •⁠  ⁠Strengthened logical thinking using array problems.
 •⁠  ⁠Committed and pushed solutions to the repository.
 
-🔗 *Code Link:*  
-👉 [Day 5 – Arrays](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
+ *Code Link:*  
+ [Day 5 – Arrays](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
 
 ---
 
@@ -107,9 +107,9 @@ BridgeLabz-Training/
 •⁠  ⁠Practiced reusable logic using methods.
 •⁠  ⁠Committed and pushed solutions to the repository.
 
-🔗 *Code Link:*  
-👉 [Day 1 – Methods](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Java-Methods))
-👉 [Day 1 – String](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Strings)
+ *Code Link:*  
+ [Day 1 – Methods](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Java-Methods))
+ [Day 1 – String](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Strings)
 
 ---
 
@@ -125,8 +125,8 @@ BridgeLabz-Training/
 •⁠  ⁠Organized programs into proper folders.
 •⁠  ⁠Committed and pushed all changes successfully.
 
-🔗 *Code Link:*  
-👉 [Day 2 – Built-in Functions](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Extras)
+ *Code Link:*  
+ [Day 2 – Built-in Functions](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Extras)
 
 ---
 
@@ -137,8 +137,8 @@ BridgeLabz-Training/
 •⁠  ⁠Organized programs into proper folders.
 •⁠  ⁠Committed and pushed all changes successfully.
 
-🔗 *Code Link:*  
-👉 [Day 3 – scenario based questions](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
+ *Code Link:*  
+ [Day 3 – scenario based questions](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
 
 ---
 
@@ -215,7 +215,7 @@ Each day built progressively on core OOP principles while following proper **Git
 - Bank Account Management System  
 - Employee Records with Manager subclass  
 
-🔗 **Code Link:**  
+ **Code Link:**  
  [Constructors and Access Modifiers](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/constructors/level1)
 
 ---
@@ -242,12 +242,12 @@ Each day built progressively on core OOP principles while following proper **Git
 - Proper class design  
 - Method implementation  
 
-🔗 **Code Link:**  
-👉 [Static, Final & Object Behavior](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/javakeyword)
+ **Code Link:**  
+ [Static, Final & Object Behavior](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/javakeyword)
 
 ---
 
-## 📅 Day 4 – Object Modelling & Class Diagrams  
+##  Day 4 – Object Modelling & Class Diagrams  
 **Date:** 30-Dec-2025
 
 Focused on **Object-Oriented Design (OOD)** and system modeling using UML.  
@@ -273,8 +273,8 @@ Emphasis was placed on identifying relationships and visualizing system structur
 - Grocery Store Bill Generation Application  
 - E-commerce Platform (Orders, Customers, Products)  
 
-🔗 **Code Link:**  
-👉 [Object Modelling and Class Diagrams](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/objectmodel/)
+ **Code Link:**  
+ [Object Modelling and Class Diagrams](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/objectmodel/)
 
 ---
 
@@ -295,12 +295,12 @@ Emphasis was placed on identifying relationships and visualizing system structur
 - Access modifiers control visibility in subclasses.
 - Inheritance improves scalability and maintainability.
 
-🔗 **Code Link:**  
-👉 [Inheritance in Java](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/inheritance)
+**Code Link:**  
+[Inheritance in Java](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/inheritance)
 
 ---
 
-## 📅 Day 6 – OOP Principles: Encapsulation, Polymorphism, Interfaces & Abstract Classes  
+##  Day 6 – OOP Principles: Encapsulation, Polymorphism, Interfaces & Abstract Classes  
 **Date:** 01-Jan-2026
 
 ### Encapsulation
@@ -328,8 +328,8 @@ Emphasis was placed on identifying relationships and visualizing system structur
 - Followed clean coding standards.
 - Focused on maintainable and readable code.
 
-🔗 **Code Link:**  
-👉 [Encapsulation, Polymorphism & Interfaces]()
+ **Code Link:**  
+ [Encapsulation, Polymorphism & Interfaces]()
 
 ---
 # Java OOPS – Scenario Based Practice
@@ -373,7 +373,7 @@ Used appliance inheritance and interface-driven device control.
 - Implemented interfaces to achieve abstraction
 - Leveraged polymorphism for dynamic behavior
 
-🔗 **Code Link:**  
+ **Code Link:**  
  [Scenario Based in Java](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day02)
 
 ---
@@ -454,7 +454,7 @@ Day 2 – Advanced OOPS
 - Node comparison and counter management  
 - Efficient use of linked list properties 
 
-🔗 **Code link:**  
+ **Code link:**  
  Day-01 – Linked List Programs [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/linkedlist)] 
 
 ---
@@ -500,7 +500,7 @@ Solved **10 problems** based on Stack, Queue, and HashMap concepts.
 9. Custom Hash Map Implementation  
 10. Two Sum Problem  
 
-📂 **Code Folder:**  
+ **Code Folder:**  
 `Day-02 – Stack, Queue & Hashing Programs`[(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/stackandqueues)]
 
 ---
@@ -611,3 +611,65 @@ Week 03 – Searching Algorithms [(https://github.com/vikashkrsingh1003/BridgeLa
 ### Code Links
 Week 03 – Algorithm Analysis  
 [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/analysis)]
+
+---
+## Day 6 – Scenario-Based OOPS Problems  
+Date: 8-Jan-2026
+
+## Topics Covered
+- Inventory and booking workflow modeling  
+- Interface-driven operations  
+- Strong encapsulation of sensitive data  
+- Constructor-based object initialization  
+- Operator-based calculations and adjustments  
+- Inheritance and runtime polymorphism  
+
+## Problems Solved
+
+### MediStore – Pharmacy Inventory & Sales System
+Application to manage medicine inventory, sales, and expiry tracking.  
+Implemented medicine inheritance, encapsulated stock data, and polymorphic expiry checks.
+
+### TourMate – Travel Itinerary Planner
+Travel planning system to manage trips, bookings, and budgets.  
+Applied trip inheritance, interface-based booking, and polymorphic booking logic.
+
+ **Code Link:**  
+ Day 6 – Scenario-Based OOPS [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day06)]
+
+## Day 7 – Scenario-Based OOPS Problems  
+Date: 9-Jan-2026
+
+## Topics Covered
+- Marketplace and ordering workflow design  
+- Interface-based purchase and order handling  
+- Secure encapsulation of sensitive business logic  
+- Constructor-based object initialization  
+- Operator-based price, balance, and progress calculations  
+- Inheritance and runtime polymorphism  
+
+## Problems Solved
+
+### Artify – Digital Art Marketplace
+Platform for selling, licensing, and subscribing to digital artwork.  
+Implemented artwork inheritance, protected licensing logic, and polymorphic licensing behavior.
+
+### FoodLoop – Restaurant Ordering System
+Food ordering application for placing and managing restaurant orders.  
+Applied food item inheritance, encapsulated stock handling, and polymorphic discount logic.
+
+### SkillForge – Online Learning Portal
+Learning platform for course enrollment, progress tracking, and certification.  
+Used user inheritance, interface-based certification, and polymorphic certificate generation.
+
+## Practice Summary
+- Designed marketplace and ordering-based applications using OOPS  
+- Applied encapsulation to protect pricing, licensing, and review data  
+- Used interfaces to standardize purchasing, ordering, and certification  
+- Implemented inheritance and polymorphism for extensible behavior  
+- Strengthened real-world scenario modeling skills  
+
+ **Code Link:**  
+ Day 7 – Scenario-Based OOPS [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day07)]
+
+
