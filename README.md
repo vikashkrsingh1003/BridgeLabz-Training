@@ -367,7 +367,33 @@ Applied vehicle inheritance, encapsulated slot state, and polymorphic charge cal
 - Improved scenario-based object modeling skills  
 
 🔗 **Code Link:**  
-👉 Day 5 – Scenario-Based OOPS [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day05)]
+ Day 5 – Scenario-Based OOPS [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day05)]
+
+---
+## Day 6 – Scenario-Based OOPS Problems  
+Date: 8-Jan-2026
+
+## Topics Covered
+- Inventory and booking workflow modeling  
+- Interface-driven operations  
+- Strong encapsulation of sensitive data  
+- Constructor-based object initialization  
+- Operator-based calculations and adjustments  
+- Inheritance and runtime polymorphism  
+
+## Problems Solved
+
+### MediStore – Pharmacy Inventory & Sales System
+Application to manage medicine inventory, sales, and expiry tracking.  
+Implemented medicine inheritance, encapsulated stock data, and polymorphic expiry checks.
+
+### TourMate – Travel Itinerary Planner
+Travel planning system to manage trips, bookings, and budgets.  
+Applied trip inheritance, interface-based booking, and polymorphic booking logic.
+
+ **Code Link:**  
+ Day 6 – Scenario-Based OOPS [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day06)]
+
 
 ## ✅ Module 2 Summary
 
