@@ -27,7 +27,7 @@
 - Node comparison and counter management  
 - Efficient use of linked list properties 
 
-🔗 **Code link:**  
+ **Code link:**  
  Day-01 – Linked List Programs [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/linkedlist)] 
 
  
@@ -74,7 +74,7 @@ Solved **10 problems** based on Stack, Queue, and HashMap concepts.
 9. Custom Hash Map Implementation  
 10. Two Sum Problem  
 
-📂 **Code Folder:**  
+ **Code Folder:**  
 `Day-02 – Stack, Queue & Hashing Programs`[(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/stackandqueues)]
 
 ---
@@ -118,7 +118,7 @@ Solved **7 sorting-based problems** using different algorithms:
 6. Heap Sort – Sort Job Applicants by Salary  
 7. Counting Sort – Sort Student Ages  
 
-📂 **Code Folder:**  
+ **Code Folder:**  
 `Week 03 – Sorting Algorithms [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/sortingalgorithms)]
 
 ---
@@ -212,6 +212,35 @@ Simulated ambulance routing across hospital units in a continuous circular path.
 
  **Code Link:**  
  Day 01 :- [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenerio-based-codebase/JavaDsaScenarioBasedQ/src/com/day01/)]
+
+---
+## Day 2 – Scenario-Based Data Structures Practice  
+Date: 12-Jan-2026
+
+## Topics Overview
+This day focused on solving real-world system simulations using queues, stacks, linked lists, and hash-based data structures.  
+The problems emphasized managing dynamic flows, navigation, history tracking, and priority-based processing.
+
+## Practice Summary
+
+### 4. CallCenter – Customer Queue Manager
+**Data Structures Used:** Queue, PriorityQueue, HashMap  
+Managed incoming customer calls with VIP priority handling and call tracking.
+
+### 5. TrainCompanion – Compartment Navigation System
+**Data Structures Used:** Doubly Linked List  
+Enabled forward/backward navigation and dynamic compartment management.
+
+### 6. TextEditor – Undo/Redo Functionality
+**Data Structures Used:** Stack  
+Implemented undo and redo operations using separate stacks.
+
+### 7. TrafficManager – Roundabout Vehicle Flow
+**Data Structures Used:** Circular Linked List, Queue  
+Simulated vehicle movement and waiting queues in a roundabout.
+
+ **Code Link:**  
+ Day 02 [()]
 
 
 
