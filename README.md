@@ -27,7 +27,7 @@
 - Node comparison and counter management  
 - Efficient use of linked list properties 
 
-🔗 **Code link:**  
+ **Code link:**  
  Day-01 – Linked List Programs [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/linkedlist)] 
 
  
@@ -74,7 +74,7 @@ Solved **10 problems** based on Stack, Queue, and HashMap concepts.
 9. Custom Hash Map Implementation  
 10. Two Sum Problem  
 
-📂 **Code Folder:**  
+ **Code Folder:**  
 `Day-02 – Stack, Queue & Hashing Programs`[(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/stackandqueues)]
 
 ---
@@ -118,5 +118,129 @@ Solved **7 sorting-based problems** using different algorithms:
 6. Heap Sort – Sort Job Applicants by Salary  
 7. Counting Sort – Sort Student Ages  
 
-📂 **Code Folder:**  
-`Week 03 – Sorting Algorithms [()]
+ **Code Folder:**  
+`Week 03 – Sorting Algorithms [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/sortingalgorithms)]
+
+---
+## Day 4 – String Handling, File Reading & Searching Algorithms  
+**Date:** 06-Jan-2026  
+
+---
+### String Handling (Mutable Strings)
+1. StringBuilder
+2. StringBuffer
+---
+
+###  File Reading (Character Streams)
+
+1. FileReader
+2. InputStreamReader
+---
+
+### Searching Algorithms Implemented
+
+1. Linear Search
+2. Binary Search
+---
+
+
+###  Code Links
+Week 03 – Searching Algorithms [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/searching)]
+
+---
+## Day 5 – Algorithm Analysis & Performance Evaluation  
+**Date:** 07-Jan-2026  
+
+---
+
+### Algorithm Analysis Concepts
+1. Runtime Analysis  
+2. Time Complexity  
+3. Space Complexity  
+
+---
+
+### Complexity Measurement
+1. Big-O Notation  
+2. Best Case Analysis  
+3. Worst Case Analysis  
+4. Average Case Analysis  
+
+---
+
+### Performance Evaluation
+1. Comparing Multiple Approaches  
+2. Identifying Bottlenecks  
+3. Optimization Trade-offs  
+
+---
+
+### Practical Application
+1. Analyzing Java Programs  
+2. Applying Optimization Techniques  
+3. Testing Performance with Sample Inputs  
+
+---
+
+### Code Links
+Week 03 – Algorithm Analysis  
+[(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/analysis)]
+
+---
+## Day 1 – Scenario-Based Data Structures Practice  
+Date: 10-Jan-2026
+
+## Topics Overview
+This day focused on applying Data Structures in real-world scenarios by combining
+Linked Lists, Stacks, Queues, HashMaps, and utility functions.  
+The emphasis was on modeling realistic workflows while ensuring efficient data access,
+traversal, and updates.
+
+## Practice Summary
+
+### 1. BookShelf – Library Organizer
+**Data Structures Used:** HashMap, LinkedList, HashSet  
+Managed genre-wise book catalogs with efficient insertion, deletion, and duplicate control.
+
+### 2. BrowserBuddy – Tab History Manager
+**Data Structures Used:** Doubly Linked List, Stack  
+Implemented browser navigation with back/forward history and tab restoration.
+
+### 3. AmbulanceRoute – Emergency Patient Navigation
+**Data Structures Used:** Circular Linked List  
+Simulated ambulance routing across hospital units in a continuous circular path.
+
+ **Code Link:**  
+ Day 01 :- [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenerio-based-codebase/JavaDsaScenarioBasedQ/src/com/day01/)]
+
+---
+## Day 2 – Scenario-Based Data Structures Practice  
+Date: 12-Jan-2026
+
+## Topics Overview
+This day focused on solving real-world system simulations using queues, stacks, linked lists, and hash-based data structures.  
+The problems emphasized managing dynamic flows, navigation, history tracking, and priority-based processing.
+
+## Practice Summary
+
+### 4. CallCenter – Customer Queue Manager
+**Data Structures Used:** Queue, PriorityQueue, HashMap  
+Managed incoming customer calls with VIP priority handling and call tracking.
+
+### 5. TrainCompanion – Compartment Navigation System
+**Data Structures Used:** Doubly Linked List  
+Enabled forward/backward navigation and dynamic compartment management.
+
+### 6. TextEditor – Undo/Redo Functionality
+**Data Structures Used:** Stack  
+Implemented undo and redo operations using separate stacks.
+
+### 7. TrafficManager – Roundabout Vehicle Flow
+**Data Structures Used:** Circular Linked List, Queue  
+Simulated vehicle movement and waiting queues in a roundabout.
+
+ **Code Link:**  
+ Day 02 [()]
+
+
+
