@@ -98,12 +98,12 @@ Each day built progressively on core OOP principles while following proper **Git
 - Proper class design  
 - Method implementation  
 
-🔗 **Code Link:**  
-👉 [Static, Final & Object Behavior](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/javakeyword)
+ **Code Link:**  
+ [Static, Final & Object Behavior](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/javakeyword)
 
 ---
 
-## 📅 Day 4 – Object Modelling & Class Diagrams  
+##  Day 4 – Object Modelling & Class Diagrams  
 **Date:** 30-Dec-2025
 
 Focused on **Object-Oriented Design (OOD)** and system modeling using UML.  
@@ -129,8 +129,8 @@ Emphasis was placed on identifying relationships and visualizing system structur
 - Grocery Store Bill Generation Application  
 - E-commerce Platform (Orders, Customers, Products)  
 
-🔗 **Code Link:**  
-👉 [Object Modelling and Class Diagrams](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/objectmodel/)
+ **Code Link:**  
+ [Object Modelling and Class Diagrams](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/objectmodel/)
 
 ---
 
@@ -151,12 +151,12 @@ Emphasis was placed on identifying relationships and visualizing system structur
 - Access modifiers control visibility in subclasses.
 - Inheritance improves scalability and maintainability.
 
-🔗 **Code Link:**  
-👉 [Inheritance in Java](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/inheritance)
+ **Code Link:**  
+ [Inheritance in Java](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/javaOopsConcepts/src/com/inheritance)
 
 ---
 
-## 📅 Day 6 – OOP Principles: Encapsulation, Polymorphism, Interfaces & Abstract Classes  
+##  Day 6 – OOP Principles: Encapsulation, Polymorphism, Interfaces & Abstract Classes  
 **Date:** 01-Jan-2026
 
 ### Encapsulation
@@ -184,8 +184,8 @@ Emphasis was placed on identifying relationships and visualizing system structur
 - Followed clean coding standards.
 - Focused on maintainable and readable code.
 
-🔗 **Code Link:**  
-👉 [Encapsulation, Polymorphism & Interfaces]()
+ **Code Link:**  
+ [Encapsulation, Polymorphism & Interfaces]()
 
 ---
 # Java OOPS – Scenario Based Practice
@@ -394,8 +394,43 @@ Applied trip inheritance, interface-based booking, and polymorphic booking logic
  **Code Link:**  
  Day 6 – Scenario-Based OOPS [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day06)]
 
+## Day 7 – Scenario-Based OOPS Problems  
+Date: 9-Jan-2026
 
-## ✅ Module 2 Summary
+## Topics Covered
+- Marketplace and ordering workflow design  
+- Interface-based purchase and order handling  
+- Secure encapsulation of sensitive business logic  
+- Constructor-based object initialization  
+- Operator-based price, balance, and progress calculations  
+- Inheritance and runtime polymorphism  
+
+## Problems Solved
+
+### Artify – Digital Art Marketplace
+Platform for selling, licensing, and subscribing to digital artwork.  
+Implemented artwork inheritance, protected licensing logic, and polymorphic licensing behavior.
+
+### FoodLoop – Restaurant Ordering System
+Food ordering application for placing and managing restaurant orders.  
+Applied food item inheritance, encapsulated stock handling, and polymorphic discount logic.
+
+### SkillForge – Online Learning Portal
+Learning platform for course enrollment, progress tracking, and certification.  
+Used user inheritance, interface-based certification, and polymorphic certificate generation.
+
+## Practice Summary
+- Designed marketplace and ordering-based applications using OOPS  
+- Applied encapsulation to protect pricing, licensing, and review data  
+- Used interfaces to standardize purchasing, ordering, and certification  
+- Implemented inheritance and polymorphism for extensible behavior  
+- Strengthened real-world scenario modeling skills  
+
+ **Code Link:**  
+ Day 7 – Scenario-Based OOPS [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day07)]
+
+
+##  Module 2 Summary
 
 - Built a strong foundation in Object-Oriented Programming  
 - Applied OOP concepts using real-world Java programs  
@@ -404,6 +439,6 @@ Applied trip inheritance, interface-based booking, and polymorphic booking logic
 
 ---
 
-📌 **Status:** Completed  
-📚 **Module:** Core Java – Object-Oriented Programming  
-🚀 **Next:** Advanced Java & Design Patterns
+ **Status:** Completed  
+ **Module:** Core Java – Object-Oriented Programming  
+ **Next:** Advanced Java & Design Patterns
