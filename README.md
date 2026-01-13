@@ -264,7 +264,7 @@ Day 2 – Advanced OOPS
 [Scenario Based in Java](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day02)
 
 ---
-Day 3 – Enterprise-Style OOPS Applications  
+##  Day 3 – Enterprise-Style OOPS Applications  
 Date: 5-Jan-2026
 
 ## Topics Covered
@@ -294,7 +294,7 @@ Implemented product inheritance and polymorphic discount application.
  Day 3 – Enterprise OOPS [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day03)]
 
 ---
-Day 4 – Advanced Real-World OOPS Applications  
+## Day 4 – Advanced Real-World OOPS Applications  
 Date: 6-Jan-2026
 
 ## Topics Covered
@@ -332,6 +332,42 @@ Applied event inheritance, interface-based scheduling, and secure cost calculati
 
 **Code Link:**  
  Day 4 - OOPS [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day04)]
+
+---
+## Day 5 – Scenario-Based OOPS Problems  
+Date: 7-Jan-2026
+
+## Topics Covered
+- Interface-driven business logic  
+- Secure encapsulation of sensitive data  
+- Constructor overloading for flexible object creation  
+- Operator-based calculations  
+- Inheritance for domain-specific extensions  
+- Runtime polymorphism for rule variations  
+
+## Problems Solved
+
+### LoanBuddy – Loan Approval Automation
+Automated loan approval module to evaluate eligibility and calculate EMIs.  
+Implemented loan inheritance, encapsulated approval logic, and polymorphic EMI calculation.
+
+### BookBazaar – Digital Bookstore System
+Backend logic for managing books, orders, and discounts.  
+Used book inheritance, interface-based discount handling, and secure inventory updates.
+
+### ParkEase – Smart Parking Management System
+Smart parking solution to assign slots, calculate charges, and track availability.  
+Applied vehicle inheritance, encapsulated slot state, and polymorphic charge calculation.
+
+## Practice Summary
+- Designed real-world applications using OOPS principles  
+- Applied encapsulation to protect internal state and business rules  
+- Used interfaces to standardize workflows and calculations  
+- Implemented inheritance and polymorphism for extensibility  
+- Improved scenario-based object modeling skills  
+
+🔗 **Code Link:**  
+👉 Day 5 – Scenario-Based OOPS [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/OopsScenarioBased/src/com/day05)]
 
 ## ✅ Module 2 Summary
 
