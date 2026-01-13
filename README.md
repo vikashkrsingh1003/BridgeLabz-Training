@@ -186,5 +186,32 @@ Week 03 – Searching Algorithms [(https://github.com/vikashkrsingh1003/BridgeLa
 Week 03 – Algorithm Analysis  
 [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javadsapractice/src/com/analysis)]
 
+---
+## Day 1 – Scenario-Based Data Structures Practice  
+Date: 10-Jan-2026
+
+## Topics Overview
+This day focused on applying Data Structures in real-world scenarios by combining
+Linked Lists, Stacks, Queues, HashMaps, and utility functions.  
+The emphasis was on modeling realistic workflows while ensuring efficient data access,
+traversal, and updates.
+
+## Practice Summary
+
+### 1. BookShelf – Library Organizer
+**Data Structures Used:** HashMap, LinkedList, HashSet  
+Managed genre-wise book catalogs with efficient insertion, deletion, and duplicate control.
+
+### 2. BrowserBuddy – Tab History Manager
+**Data Structures Used:** Doubly Linked List, Stack  
+Implemented browser navigation with back/forward history and tab restoration.
+
+### 3. AmbulanceRoute – Emergency Patient Navigation
+**Data Structures Used:** Circular Linked List  
+Simulated ambulance routing across hospital units in a continuous circular path.
+
+ **Code Link:**  
+ Day 01 :- [(https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenerio-based-codebase/JavaDsaScenarioBasedQ/src/com/day01/)]
+
 
 
