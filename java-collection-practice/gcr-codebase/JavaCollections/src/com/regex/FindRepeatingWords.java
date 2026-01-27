@@ -11,7 +11,7 @@ public class FindRepeatingWords {
 
         Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
 
-        String input = "This is is a repeated repeated word test.";
+        String input = "This is  is a repeated repeated word test.";
 
         Matcher matcher = pattern.matcher(input);
 
