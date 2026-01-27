@@ -23,6 +23,7 @@ public class StudentDataStreamDemo {
             e.printStackTrace();
         }
 
+   
      
         try (
             FileInputStream fis = new FileInputStream(filePath);
@@ -37,6 +38,7 @@ public class StudentDataStreamDemo {
             System.out.println("Roll No: " + roll);
             System.out.println("Name   : " + name);
             System.out.println("GPA    : " + gpa);
+           
 
         } catch (IOException e) {
             e.printStackTrace();
