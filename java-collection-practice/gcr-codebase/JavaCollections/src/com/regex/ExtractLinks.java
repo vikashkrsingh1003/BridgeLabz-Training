@@ -9,7 +9,7 @@ public class ExtractLinks {
         String text = "Visit https://www.google.com and http://example.org for more info.";
 
         
-        String regex = "https?://[^\\s.,)]+";
+        String regex = "https?://[a-z]+\\.[a-z]+\\.?[a-z]*";
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text);
