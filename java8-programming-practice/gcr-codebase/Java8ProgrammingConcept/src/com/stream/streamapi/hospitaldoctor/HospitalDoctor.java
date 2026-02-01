@@ -14,7 +14,7 @@ public class HospitalDoctor {
 				                                new Doctor(true,"Ortho"),
 				                                new Doctor(true,"Dermologist")));
 		
-		List<Doctor> availableDoctorList = list.stream()
+	List<Doctor> availableDoctorList = list.stream()
 				.filter(d -> d.isAvailability())
 				.sorted(Comparator.comparing(Doctor::getSpeciality))
 		        .toList();
