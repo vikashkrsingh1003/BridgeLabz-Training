@@ -10,14 +10,16 @@ public class StringLengthChecker {
 
         int length = lengthFinder.apply(message);
 
-        if (length > 20) System.out.println("Message too long! - Length: " + length);
-        else System.out.println("Message accepted. - Length: " + length);
+        if (length > 10)
+        	System.out.println("Message too long - Length: " + length);
+        else
+        	System.out.println("Message accepted - Length: " + length);
         
     }
         
     public static void main(String[] args) {
-        checkLength("This is Functinal Interface code #3");
-        checkLength("I am vaidik");
+        checkLength("Welcome");
+        checkLength("I am vikash");
     }
 }
 
