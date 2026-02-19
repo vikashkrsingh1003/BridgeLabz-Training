@@ -1646,5 +1646,4 @@ A student database application implementing complete CRUD operations.
 
 
  Code Link: JDBC Practice Questions  
-[BankDB]()
-[StudentDb]()
+[jdbc all](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/mysql-jdbc-practice/mysql-jdbc-practice/gcr-codebase/JdbcPractice/src/main/java/com)
