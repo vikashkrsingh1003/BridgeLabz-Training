@@ -1,4 +1,4 @@
-package com.healthclinicApp.Health_Clinic_App;
+package com.healthclinicApp;
 import java.sql.*;
 import java.util.Scanner;
 
