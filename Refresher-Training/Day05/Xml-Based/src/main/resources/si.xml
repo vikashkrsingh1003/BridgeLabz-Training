@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Address Bean -->
+    <bean id="address" class="com.springcore.setterInjection.Address">
+        <constructor-arg value="Hyderabad"/>
+        <constructor-arg value="Telangana"/>
+    </bean>
+
+    <!-- Student Bean -->
+   <bean id="student" class="com.springcore.setterInjection.Student">
+    <property name="id" value="101"/>
+    <property name="name" value="Rahul"/>
+    <property name="address" ref="address"/>
+</bean>
+
+</beans>
