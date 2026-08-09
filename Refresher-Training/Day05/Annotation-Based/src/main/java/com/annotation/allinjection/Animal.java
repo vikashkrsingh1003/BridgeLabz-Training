@@ -21,9 +21,7 @@ public class Animal {
 //        this.food = food;
 //    }
 //    
-    
-    
-  
+     
 
     public void display() {
         System.out.println("Animal : Cow");
