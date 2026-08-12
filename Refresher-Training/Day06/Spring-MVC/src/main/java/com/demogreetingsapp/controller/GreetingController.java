@@ -20,10 +20,6 @@ public class GreetingController {
         this.greetingRepository = greetingRepository;
     }
 
-    // ==============================
-    // Greeting App
-    // ==============================
-
     @GetMapping("/greeting")
     public String showGreetingPage() {
 
@@ -31,9 +27,7 @@ public class GreetingController {
     }
 
 
-    // ==============================
-    // Greet Me
-    // ==============================
+   
 
     @PostMapping("/greet")
     public String greetMe(
@@ -55,9 +49,7 @@ public class GreetingController {
     }
 
 
-    // ==============================
-    // Show All Greetings
-    // ==============================
+
 
     @GetMapping("/greetings")
     public String showAllGreetings(Model model) {
@@ -74,10 +66,7 @@ public class GreetingController {
     }
 
 
-    // ==============================
-    // EDIT
-    // ==============================
-
+ 
     @PostMapping("/edit")
     public String editGreeting(
             @RequestParam("id") Long id,
@@ -98,9 +87,7 @@ public class GreetingController {
     }
 
 
-    // ==============================
-    // DELETE
-    // ==============================
+  
 
     @GetMapping("/delete")
     public String deleteGreeting(

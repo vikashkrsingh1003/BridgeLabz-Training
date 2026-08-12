@@ -19,18 +19,11 @@ public class AuthController {
         this.userService = userService;
     }
 
-    // ==============================
-    // Home
-    // ==============================
-
     @GetMapping("/")
     public String home() {
         return "redirect:/login";
     }
 
-    // ==============================
-    // Login Page
-    // ==============================
 
     @GetMapping("/login")
     public String showLoginPage(Model model) {
@@ -40,9 +33,7 @@ public class AuthController {
         return "login";
     }
 
-    // ==============================
-    // Registration Page
-    // ==============================
+   
 
     @GetMapping("/register")
     public String showRegisterPage(Model model) {
@@ -52,9 +43,7 @@ public class AuthController {
         return "register";
     }
 
-    // ==============================
-    // Registration
-    // ==============================
+
 
     @PostMapping("/register")
     public String registerUser(
@@ -81,10 +70,7 @@ public class AuthController {
         return "register";
     }
 
-    // ==============================
-    // Login
-    // ==============================
-
+   
     @PostMapping("/login")
     public String loginUser(
             @ModelAttribute("user") User user,
