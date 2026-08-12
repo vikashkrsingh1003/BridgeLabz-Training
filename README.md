@@ -1,185 +1,298 @@
-# [ BridgeLabz Refresher-Training ]
 
-##  *Training Overview*
+# 🚀 BridgeLabz Training
 
- > This repository documents my learning journey at BridgeLabz, spanning from **July 31** to present. 
- > The training is organized into structured branches covering different aspects of Java development.
+> This repository contains my **BridgeLabz Training journey**, including daily learning, assignments, practical exercises, and projects.
 
-##  *Learning Milestones*
-
-| Day |     Date    | Topic                           | Coverage                              |
-|-----|-------------|---------------------------------|---------------------------------------|
-|   1 | 31 Jul      |Types of Databases,  Relational Databases, Non-Relational Databases, DDL, DML|**1.** Set up MySQL environment **2.** Begin ER Diagram sketch for the Health Clinic App (patients, doctors, appointments)|
-|   2 | 3 Aug       |Entity Relation Diagram principles, Table Indexing, Normalization forms|**1.**  Finalise the ER Diagram for the Health Clinic App **2.** Normalize the patient/doctor/appointment schema|
-
----
-##  *Key Concepts Covered*
-> ### DBMS
--  **Fundamentals**: Types of Databases, Relational and Non-Relational Databases, MySQL, DDL, DML, ER Diagrams, Indexing, Normalization forms(1NF, 2NF, 3NF, BCNF)
----
-
-
-## 🔗 *Quick Links*
-
-> ### DBMS :
-- 📌 [Day-1](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day01)  
-- 📌 [Day-2](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day02)  
-
-  ### Day 3: Joins, Triggers, and Stored Procedures
-* **Focus Area:** Advanced SQL operations — mastering joins, automating workflows with triggers, and encapsulating logic using stored procedures.  
-* **Code & Resources:** [View Day 3 Directory]((https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day03))
-
-#### Core Concepts Covered
-
-##### 1. SQL Joins
-- **INNER JOIN:** Match patients with confirmed appointments  
-- **LEFT JOIN:** Show all doctors, even those without appointments  
-- **RIGHT JOIN:** Show all patients, even those without appointments  
-
-##### 2. Triggers
-- **AFTER INSERT Trigger:** Update doctor statistics when a new appointment is booked  
-- **AFTER UPDATE Trigger:** Log patient information changes into a `patient_log` table  
-- **AFTER DELETE Trigger:** Decrement doctor patient counts when appointments are cancelled  
-
-Triggers ensure **real-time analytics**, **data integrity**, and **automation**.
-
-##### 3. Stored Procedures
-- **AddDoctor Procedure:** Insert new doctor records with validated parameters  
-- **AddPatient Procedure:** Add patients while enforcing mandatory fields (name, gender)  
-- **BookAppointment Procedure:** Book appointments linking doctor and patient IDs, with default status as `confirmed`  
-
-Stored procedures simplify integration with Java CLI applications by providing a clean, callable interface for database operations.
-
----
-# Day 4: HealthClinic CLI Application (Java + JDBC)
-
-## Focus Area
-Building a command-line interface (CLI) application to interact with the HealthClinic database using JDBC.
-
-## Code & Resources
-[View Day 4 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Day04)
+The training is organized day-wise to make the progress easy to follow.
 
 ---
 
-## Core Concepts Covered
-- **JDBC Workflow:** Driver loading, connection establishment, statement execution, result processing, and resource management  
-- **POJO Classes:** Mapping database rows into Java objects for clean data handling  
-- **PreparedStatement:** Parameterized queries to prevent SQL injection  
-- **CLI Integration:** Menu-driven interface for CRUD operations on doctors, patients, and appointments  
+## 📚 Training Progress
 
-## Application Features
-- Add new doctors and patients  
-- Book, update, and cancel appointments  
-- View patient history and doctor schedules  
-
-
-# Day 5: Servlets, Tomcat Server, and Spring Core
-
-## Focus Area
-
-Understanding Java Servlets and the Tomcat server, followed by exploring the fundamentals of the Spring Core framework and its dependency injection features.
-
-## Code & Resources
-
-[View Day 5 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Day05)
+| Day | Topic | Project / Activity |
+|---|---|---|
+| Day 01 | DDL & DML | Database Operations |
+| Day 02 | ER Diagrams & Normalization | Health Clinic Database |
+| Day 03 | Joins, Triggers & Stored Procedures | Advanced SQL |
+| Day 04 | Java + JDBC | HealthClinic CLI |
+| Day 05 | Spring Core | Spring Configuration |
+| Day 06 | Spring MVC | MyGreetingApp |
+| Day 07 | Spring Boot + JPA | ContactApp |
 
 ---
 
-## Core Concepts Covered
+# 🗓️ Day 01 — DDL & DML Operations
 
-### 1. Java Servlets
+### 🎯 Focus
 
-- Understanding the role of **Servlets** in Java web applications
-- Exploring the **Servlet lifecycle**
-- Handling HTTP requests and responses
-- Working with `doGet()` and `doPost()` methods
-- Understanding request parameters and response handling
+Introduction to **DBMS, DDL, DML, and CRUD operations**.
 
-### 2. Apache Tomcat Server
+### 📌 Topics Covered
 
-- Understanding Tomcat as a **Servlet container**
-- Configuring and running web applications using Tomcat
-- Deploying servlet-based applications
-- Understanding how Tomcat receives and processes HTTP requests
+- Introduction to DBMS
+- Problems with file-based storage
+- Data redundancy and consistency
+- DDL commands
+- DML commands
+- CRUD operations
 
-### 3. Spring Core
+### 🔗 Resources
 
-- Introduction to the **Spring Framework**
-- Understanding **Inversion of Control (IoC)**
-- Exploring **Dependency Injection (DI)**
-- Creating Spring beans
-- Understanding Spring configuration and bean management
-- Exploring annotation-based configuration
+[View Day 01](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day01)
 
-## Practical Work
+---
 
-- Explored Java Servlets and their lifecycle
-- Set up and worked with the Tomcat server
-- Created basic servlet-based learning projects
-- Built small projects to understand Spring Core concepts
-- Practiced dependency injection and Spring bean configuration
+# 🗓️ Day 02 — ER Diagrams & Normalization
+
+### 🎯 Focus
+
+Database design using **ER diagrams, relationships, and normalization**.
+
+### 📌 Topics Covered
+
+- ER Diagrams
+- One-to-Many relationships
+- Many-to-Many relationships
+- Junction Tables
+- Data Anomalies
+- 1NF, 2NF, and 3NF
+
+### 🏥 Practical Work
+
+Designed a **Health Clinic database** using:
+
+```text
+Patient → Appointment ← Doctor
+```
+### 🔗 Resources
+
+[View Day 02](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day02)
+
+---
+
+# 🗓️ Day 03 — Joins, Triggers & Stored Procedures
+
+## 🎯 Focus Area
+
+Working with advanced SQL concepts including **Joins, Triggers, and Stored Procedures**.
+
+## 📚 Concepts Covered
+
+### 🔄 SQL Joins
+
+- `INNER JOIN` - Retrieves matching records from both tables
+- `LEFT JOIN` - Retrieves all records from the left table
+- `RIGHT JOIN` - Retrieves all records from the right table
+
+### ⚡ Triggers
+
+Implemented triggers for automating database operations:
+
+- `AFTER INSERT` - Updates doctor statistics when an appointment is created
+- `AFTER UPDATE` - Logs patient information changes
+- `AFTER DELETE` - Updates doctor statistics when an appointment is cancelled
+
+### ⚙️ Stored Procedures
+
+Implemented stored procedures for:
+
+- `AddDoctor`
+- `AddPatient`
+- `BookAppointment`
+
+## 💡 Key Learning
+
+Learned how SQL Joins are used to retrieve related data and how Triggers and Stored Procedures can automate and simplify database operations.
+
+## 🔗 Resources
+
+[View Day 03 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day03)
+
+---
+
+# 🗓️ Day 04 — HealthClinic CLI Application
+
+## 🎯 Focus Area
+
+Building a **Java CLI application** to interact with the HealthClinic database using **JDBC**.
+
+## 🛠️ Technologies Used
+
+- Java
+- JDBC
+- MySQL
+- SQL
+
+## 📚 Concepts Covered
+
+- JDBC workflow
+- Database connection
+- `PreparedStatement`
+- `ResultSet`
+- POJO classes
+- CRUD operations
+- Exception handling
+- Menu-driven CLI application
+
+## ✨ Application Features
+
+- Add doctors
+- Add patients
+- Book appointments
+- Update appointments
+- Cancel appointments
+- View patient history
+- View doctor schedules
+
+## 🏗️ Application Flow
+
+```text
+Java CLI Application
+        ↓
+       JDBC
+        ↓
+   MySQL Database
+```
+### 🔗 Resources
+
+[View Day 04](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day04)
+
+---
+
+# 🗓️ Day 05 — Spring Core Configuration
+
+## 🎯 Focus Area
+
+Understanding **Spring Core**, IoC, Dependency Injection, and different Spring configuration approaches.
+
+## 📚 Concepts Covered
+
+- Inversion of Control (IoC)
+- Dependency Injection
+- Constructor Injection
+- Spring Beans
+- IoC Container
+- Component Scanning
+- XML-based Configuration
+- Annotation-based Configuration
+- Java-based Configuration
+- `@Component`
+- `@Autowired`
+- `@Configuration`
+- `@Bean`
+
+## 🔧 Configuration Approaches
+
+### 1. XML-Based Configuration
+
+Configured Spring Beans using `applicationContext.xml`.
+
+### 2. Annotation-Based Configuration
+
+Used annotations such as:
+
+
+@Component
+@Autowired
+
+### 🔗 Resources
+
+[View Day 05](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day05)
+
+---
+
+# 🗓️ Day 06 — MyGreetingApp | Spring MVC
+
+## 🎯 Focus Area
+
+Building a basic **Spring MVC web application** using Controller, Service, and Model layers.
+
+## 🛠️ Technologies Used
+
+- Java
+- Spring Core
+- Spring MVC
+- Maven
+
+## 📚 Concepts Covered
+
+- Spring MVC Architecture
+- Controller Layer
+- Service Layer
+- Model Layer
+- Dependency Injection
+- Constructor Injection
+- Form Handling
+- Request and Response
+- `@Controller`
+- `@GetMapping`
+- `@PostMapping`
+
+## 🏗️ Application Architecture
+
+```text
+Client
+   ↓
+Controller
+   ↓
+Service
+   ↓
+Model
+   ↓
+Response
+
+```
+### 🔗 Resources
+
+[View Day 06](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day06)
+
+---
+
+# 🗓️ Day 07 — ContactApp | Spring Boot + H2 Database
+
+## 🎯 Focus Area
+
+Building a **Contact Management REST API** using Spring Boot, Spring Data JPA, and H2 Database.
+
+## 🛠️ Technologies Used
+
+- Java
+- Spring Boot
+- Spring Web
+- Spring Data JPA
+- H2 Database
+- Maven
+
+## 📚 Concepts Covered
+
+- Spring Boot
+- REST API
+- Spring Data JPA
+- H2 Database
+- Entity Mapping
+- `@Entity`
+- `JpaRepository`
+- Dependency Injection
+- Layered Architecture
+- CRUD Operations
+
+## 🏗️ Architecture
+
+```text
+Controller
+    ↓
+Service
+    ↓
+Repository
+    ↓
+H2 Database
+```
+
+### 🔗 Resources
+
+[View Day 07](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day07)
 
 ## Summary
 
-Day 5 focused on moving from traditional Java web development using **Servlets and Tomcat** toward modern application development with **Spring Core**, establishing a foundation for learning Spring MVC.
-
----
-
-# Day 6: Spring MVC Fundamentals
-
-## Focus Area
-
-Understanding the fundamentals of **Spring MVC** and building a simple web application using the Model-View-Controller architecture.
-
-## Code & Resources
-
-[View Day 6 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Day06)
-
----
-
-## Core Concepts Covered
-
-### 1. Spring MVC Architecture
-
-- Understanding the **Model-View-Controller (MVC)** design pattern
-- Understanding the responsibilities of Model, View, and Controller
-- Exploring how requests flow through a Spring MVC application
-
-### 2. Controllers
-
-- Creating Spring MVC controllers
-- Handling HTTP requests using controller methods
-- Using request mappings to map URLs to specific controller methods
-- Returning responses from controller methods
-
-### 3. Views and Request Handling
-
-- Understanding how controllers interact with views
-- Passing data from controllers to views
-- Handling user requests and generating appropriate responses
-
-### 4. Spring MVC Application Flow
-
-- Client sends an HTTP request
-- Request is handled by the Spring MVC framework
-- Controller processes the request
-- Required data is prepared
-- Appropriate response/view is returned to the client
-
-## Practical Work
-
-- Explored the fundamentals of **Spring MVC**
-- Created a basic Spring MVC project
-- Implemented controllers and request mappings
-- Built a **Demo Greetings App**
-- Practiced handling web requests and returning responses
-
-## Summary
-
-Day 6 focused on understanding the **Spring MVC architecture** and applying its core concepts by building a simple **Demo Greetings App**. This provided a foundation for developing structured Java web applications using Spring.
-
-
-## Summary
-This project demonstrates **end-to-end integration**:  
-**SQL schema design → JDBC connection → Java POJO mapping → CLI interaction**
----
+Built `ContactApp` using **Spring Boot, Spring Data JPA, and H2 Database** to understand how REST APIs interact with a relational database. Implemented complete **CRUD operations** using a layered architecture consisting of **Controller → Service → Repository → H2 Database**.
+```
