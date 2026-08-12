@@ -18,6 +18,7 @@ The training is organized day-wise to make the progress easy to follow.
 | Day 05 | Spring Core | Spring Configuration |
 | Day 06 | Spring MVC | MyGreetingApp |
 | Day 07 | Spring Boot + JPA | ContactApp |
+| Day08  | API Testing & SDLC | ContactApp |
 
 ---
 
@@ -292,6 +293,43 @@ H2 Database
 
 [View Day 07](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day07)
 
+---
+
+# 🗓️ Day 08 — Backend Basics | API Testing & SDLC
+
+## 🎯 Focus Area
+
+Introduction to **API Testing Tools** and **Software Development Life Cycle (SDLC)**.
+
+## 🛠️ Tools & Technologies
+
+- REST Assured
+- JSON Server
+- REST API
+- SDLC
+
+## 📚 Concepts Covered
+
+- API mocking using JSON Server
+- API testing using REST Assured
+- REST API endpoints
+- Software Development Life Cycle (SDLC)
+- Backend development process
+
+## ✨ Activities
+
+- Continued development of the **ContactApp backend**
+- Applied concepts introduced during live classes
+- Created and tested mock APIs using JSON Server
+- Tested ContactApp endpoints using REST Assured
+
+## 💡 Key Learning
+
+Learned the basics of **API testing, API mocking, and SDLC** and how they are used in backend development.
+
+## 🔗 Resources
+
+[View Day 08 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day08)
 ## Summary
 
 Built `ContactApp` using **Spring Boot, Spring Data JPA, and H2 Database** to understand how REST APIs interact with a relational database. Implemented complete **CRUD operations** using a layered architecture consisting of **Controller → Service → Repository → H2 Database**.
