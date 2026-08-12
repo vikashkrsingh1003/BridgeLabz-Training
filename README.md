@@ -72,6 +72,113 @@ Building a command-line interface (CLI) application to interact with the HealthC
 - Book, update, and cancel appointments  
 - View patient history and doctor schedules  
 
+
+# Day 5: Servlets, Tomcat Server, and Spring Core
+
+## Focus Area
+
+Understanding Java Servlets and the Tomcat server, followed by exploring the fundamentals of the Spring Core framework and its dependency injection features.
+
+## Code & Resources
+
+[View Day 5 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Day05)
+
+---
+
+## Core Concepts Covered
+
+### 1. Java Servlets
+
+- Understanding the role of **Servlets** in Java web applications
+- Exploring the **Servlet lifecycle**
+- Handling HTTP requests and responses
+- Working with `doGet()` and `doPost()` methods
+- Understanding request parameters and response handling
+
+### 2. Apache Tomcat Server
+
+- Understanding Tomcat as a **Servlet container**
+- Configuring and running web applications using Tomcat
+- Deploying servlet-based applications
+- Understanding how Tomcat receives and processes HTTP requests
+
+### 3. Spring Core
+
+- Introduction to the **Spring Framework**
+- Understanding **Inversion of Control (IoC)**
+- Exploring **Dependency Injection (DI)**
+- Creating Spring beans
+- Understanding Spring configuration and bean management
+- Exploring annotation-based configuration
+
+## Practical Work
+
+- Explored Java Servlets and their lifecycle
+- Set up and worked with the Tomcat server
+- Created basic servlet-based learning projects
+- Built small projects to understand Spring Core concepts
+- Practiced dependency injection and Spring bean configuration
+
+## Summary
+
+Day 5 focused on moving from traditional Java web development using **Servlets and Tomcat** toward modern application development with **Spring Core**, establishing a foundation for learning Spring MVC.
+
+---
+
+# Day 6: Spring MVC Fundamentals
+
+## Focus Area
+
+Understanding the fundamentals of **Spring MVC** and building a simple web application using the Model-View-Controller architecture.
+
+## Code & Resources
+
+[View Day 6 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Day06)
+
+---
+
+## Core Concepts Covered
+
+### 1. Spring MVC Architecture
+
+- Understanding the **Model-View-Controller (MVC)** design pattern
+- Understanding the responsibilities of Model, View, and Controller
+- Exploring how requests flow through a Spring MVC application
+
+### 2. Controllers
+
+- Creating Spring MVC controllers
+- Handling HTTP requests using controller methods
+- Using request mappings to map URLs to specific controller methods
+- Returning responses from controller methods
+
+### 3. Views and Request Handling
+
+- Understanding how controllers interact with views
+- Passing data from controllers to views
+- Handling user requests and generating appropriate responses
+
+### 4. Spring MVC Application Flow
+
+- Client sends an HTTP request
+- Request is handled by the Spring MVC framework
+- Controller processes the request
+- Required data is prepared
+- Appropriate response/view is returned to the client
+
+## Practical Work
+
+- Explored the fundamentals of **Spring MVC**
+- Created a basic Spring MVC project
+- Implemented controllers and request mappings
+- Built a **Demo Greetings App**
+- Practiced handling web requests and returning responses
+
+## Summary
+
+Day 6 focused on understanding the **Spring MVC architecture** and applying its core concepts by building a simple **Demo Greetings App**. This provided a foundation for developing structured Java web applications using Spring.
+
+
 ## Summary
 This project demonstrates **end-to-end integration**:  
 **SQL schema design → JDBC connection → Java POJO mapping → CLI interaction**
