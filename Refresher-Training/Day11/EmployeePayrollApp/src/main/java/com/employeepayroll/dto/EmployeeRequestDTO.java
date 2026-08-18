@@ -1,6 +1,5 @@
 package com.employeepayroll.dto;
 
-import java.time.LocalDate;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -13,9 +12,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class EmployeeDTO {
-
-    private int id;
+public class EmployeeRequestDTO {
 
     @NotBlank(message = "Name is required")
     private String name;
@@ -31,15 +28,10 @@ public class EmployeeDTO {
     @NotBlank(message = "Phone is required")
     private String phone;
 
-    @NotBlank(message = "Department is required")
-    private String department;
-
-    @NotBlank(message = "Designation is required")
-    private String designation;
-
     @Positive(message = "Salary must be greater than 0")
     private double salary;
 
-    @NotNull(message = "Joining date is required")
-    private LocalDate joiningDate;
+    @NotNull(message = "Department ID is required")
+    @Positive(message = "Department ID must be greater than zero")
+    private Long departmentId;
 }

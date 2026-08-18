@@ -1,162 +1,101 @@
 package com.employeepayroll.service;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import com.employeepayroll.dto.EmployeeDTO;
+import com.employeepayroll.dto.EmployeeRequestDTO;
+import com.employeepayroll.dto.EmployeeResponseDTO;
+import com.employeepayroll.exception.DepartmentNotFoundException;
+import com.employeepayroll.exception.EmployeeNotFoundException;
+import com.employeepayroll.mapper.EmployeeMapper;
+import com.employeepayroll.model.Department;
 import com.employeepayroll.model.Employee;
+import com.employeepayroll.repository.DepartmentRepository;
 import com.employeepayroll.repository.EmployeeRepository;
+
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
     private final EmployeeRepository employeeRepository;
+    private final EmployeeMapper employeeMapper;
+    private final DepartmentRepository departmentRepository;
 
-    public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
+    public EmployeeServiceImpl(EmployeeRepository employeeRepository, EmployeeMapper employeeMapper, DepartmentRepository departmentRepository) {
         this.employeeRepository = employeeRepository;
+        this.employeeMapper = employeeMapper;
+        this.departmentRepository = departmentRepository;
     }
 
-    // CREATE
     @Override
-    public EmployeeDTO createEmployee(EmployeeDTO employeeDTO) {
+    public EmployeeResponseDTO createEmployee(EmployeeRequestDTO request) {
 
-        Employee employee = new Employee();
-
-        employee.setName(employeeDTO.getName());
-        employee.setEmail(employeeDTO.getEmail());
-        employee.setPhone(employeeDTO.getPhone());
-        employee.setDepartment(employeeDTO.getDepartment());
-        employee.setDesignation(employeeDTO.getDesignation());
-        employee.setSalary(employeeDTO.getSalary());
-        employee.setJoiningDate(employeeDTO.getJoiningDate());
+    	Department department =  departmentRepository.findById(request.getDepartmentId())
+        	.orElseThrow(() -> new DepartmentNotFoundException("Department not found with id: " + request.getDepartmentId()));
+        
+        Employee employee = employeeMapper.toEntity(request);
+        
+        employee.setDepartment(department);
 
         Employee savedEmployee = employeeRepository.save(employee);
 
-        return convertToDTO(savedEmployee);
+        return employeeMapper.toResponseDTO(savedEmployee);
     }
 
-    // READ BY ID
     @Override
-    public EmployeeDTO getEmployeeById(int id) {
-
-        Employee employee = employeeRepository.findById(id)
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Employee not found with id: " + id
-                        )
-                );
-
-        return convertToDTO(employee);
-    }
-
-   
-    //for pagination
-    @Override
-    public Page<EmployeeDTO> getAllEmployees(int page, int size) {
-
-        Pageable pageable = PageRequest.of(page, size);
+    public Page<EmployeeResponseDTO> getAllEmployees(Pageable pageable) {
 
         return employeeRepository.findAll(pageable)
-                .map(this::convertToDTO);
+                .map(employeeMapper::toResponseDTO);
     }
-    
-    
-    //for sorting basis of salary 
-    
+
     @Override
-    public List<EmployeeDTO> getEmployeesSortedBySalary(String direction) {
-
-        Sort sort;
-
-        if (direction.equalsIgnoreCase("desc")) {
-            sort = Sort.by("salary").descending();
-        } else {
-            sort = Sort.by("salary").ascending();
-        }
-
-        return employeeRepository.findAll(sort)
-                .stream()
-                .map(this::convertToDTO)
-                .collect(Collectors.toList());
-    }
-    
-    
-    
-    
-    
-
-    // UPDATE
-    @Override
-    public EmployeeDTO updateEmployee(
-            int id,
-            EmployeeDTO employeeDTO) {
+    public EmployeeResponseDTO getEmployeeById(Long id) {
 
         Employee employee = employeeRepository.findById(id)
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Employee not found with id: " + id
-                        )
-                );
+                .orElseThrow(() -> new EmployeeNotFoundException("Employee not found with id: " + id));
 
-        employee.setName(employeeDTO.getName());
-        employee.setEmail(employeeDTO.getEmail());
-        employee.setPhone(employeeDTO.getPhone());
-        employee.setDepartment(employeeDTO.getDepartment());
-        employee.setDesignation(employeeDTO.getDesignation());
-        employee.setSalary(employeeDTO.getSalary());
-        employee.setJoiningDate(employeeDTO.getJoiningDate());
+        return employeeMapper.toResponseDTO(employee);
+    }
+
+    @Override
+    public EmployeeResponseDTO updateEmployee(Long id, EmployeeRequestDTO request) {
+
+        Employee employee = employeeRepository.findById(id)
+                .orElseThrow(() -> new EmployeeNotFoundException("Employee not found with id: " + id));
+
+        Department department = departmentRepository.findById(request.getDepartmentId())
+                .orElseThrow(() -> new DepartmentNotFoundException("Department not found with id: " + request.getDepartmentId()));
+
+        employee.setName(request.getName());
+        employee.setEmail(request.getEmail());
+        employee.setPhone(request.getPhone());
+        employee.setSalary(request.getSalary());
+        employee.setDepartment(department);
 
         Employee updatedEmployee = employeeRepository.save(employee);
 
-        return convertToDTO(updatedEmployee);
+        return employeeMapper.toResponseDTO(updatedEmployee);
     }
 
-    // DELETE
     @Override
-    public void deleteEmployee(int id) {
+    public void deleteEmployee(Long id) {
 
         Employee employee = employeeRepository.findById(id)
-                .orElseThrow(() ->
-                        new RuntimeException(
-                                "Employee not found with id: " + id
-                        )
-                );
+        		.orElseThrow(() -> new EmployeeNotFoundException("Employee not found with id: " + id));
 
         employeeRepository.delete(employee);
     }
-
     
-    
-    // ENTITY → DTO
-    private EmployeeDTO convertToDTO(Employee employee) {
-
-        EmployeeDTO dto = new EmployeeDTO();
-
-        dto.setId(employee.getId());
-        dto.setName(employee.getName());
-        dto.setEmail(employee.getEmail());
-        dto.setPhone(employee.getPhone());
-        dto.setDepartment(employee.getDepartment());
-        dto.setDesignation(employee.getDesignation());
-        dto.setSalary(employee.getSalary());
-        dto.setJoiningDate(employee.getJoiningDate());
-
-        return dto;
-    }
-
     @Override
-    public Double findSecondHighestSalary() {
-        return employeeRepository.findSecondHighestSalary();
-    }
+    public List<EmployeeResponseDTO> getEmployeesBySalary(double salary) {
 
-    @Override
-    public Long countEmployees() {
-        return employeeRepository.countEmployees();
+        return employeeRepository.findEmployeesWithSalaryAbove(salary)
+                .stream()
+                .map(employeeMapper::toResponseDTO)
+                .toList();
     }
 }

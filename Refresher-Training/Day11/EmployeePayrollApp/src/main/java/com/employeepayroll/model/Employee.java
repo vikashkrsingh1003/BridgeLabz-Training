@@ -1,7 +1,5 @@
 package com.employeepayroll.model;
 
-import java.time.LocalDate;
-
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -13,12 +11,14 @@ public class Employee {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
     private String name;
     private String email;
     private String phone;
-    private String department;
-    private String designation;
     private double salary;
-    private LocalDate joiningDate;
+    
+    
+    @ManyToOne
+    @JoinColumn(name = "department_id")
+    private Department department;
 }

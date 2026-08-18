@@ -1,38 +1,28 @@
 package com.employeepayroll.service;
 
 
-
-
 import java.util.List;
 
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
-import com.employeepayroll.dto.EmployeeDTO;
+import com.employeepayroll.dto.EmployeeRequestDTO;
+import com.employeepayroll.dto.EmployeeResponseDTO;
+
 public interface EmployeeService {
-	
-    EmployeeDTO createEmployee(EmployeeDTO employeeDTO);
 
-   
-    EmployeeDTO getEmployeeById(int id);
+    EmployeeResponseDTO createEmployee(EmployeeRequestDTO request);
 
-    
-    //for pagination
-    Page<EmployeeDTO> getAllEmployees(int page, int size);
-    
-    
-    List<EmployeeDTO> getEmployeesSortedBySalary(String direction);
+    Page<EmployeeResponseDTO> getAllEmployees(Pageable pageable);
 
-    //using @Query
-    Double findSecondHighestSalary();
-    //using @Query
-    Long countEmployees();
-    
-    
-   
-    EmployeeDTO updateEmployee(int id, EmployeeDTO employeeDTO);
+    EmployeeResponseDTO getEmployeeById(Long id);
 
+    EmployeeResponseDTO updateEmployee(Long id, EmployeeRequestDTO request);
 
-    void deleteEmployee(int id);
+    void deleteEmployee(Long id);
+    
+ 
+    List<EmployeeResponseDTO> getEmployeesBySalary(double salary);
     
     
 }

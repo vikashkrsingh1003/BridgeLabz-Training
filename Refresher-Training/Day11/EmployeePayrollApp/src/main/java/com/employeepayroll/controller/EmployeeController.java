@@ -3,11 +3,15 @@ package com.employeepayroll.controller;
 import java.util.List;
 
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.employeepayroll.dto.EmployeeDTO;
+import com.employeepayroll.dto.EmployeeRequestDTO;
+import com.employeepayroll.dto.EmployeeResponseDTO;
 import com.employeepayroll.service.EmployeeService;
 
 import jakarta.validation.Valid;
@@ -16,101 +20,41 @@ import jakarta.validation.Valid;
 @RequestMapping("/api/employees")
 public class EmployeeController {
 
-    private final EmployeeService employeeService;
+	private final EmployeeService employeeService;
 
     public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 
-    // CREATE
     @PostMapping
-    public ResponseEntity<EmployeeDTO> createEmployee(
-            @Valid @RequestBody EmployeeDTO employeeDTO) {
-
-        EmployeeDTO savedEmployee =
-                employeeService.createEmployee(employeeDTO);
-
-        return new ResponseEntity<>(
-                savedEmployee,
-                HttpStatus.CREATED
-        );
+    public ResponseEntity<EmployeeResponseDTO> createEmployee(@Valid @RequestBody EmployeeRequestDTO request) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(employeeService.createEmployee(request));
     }
 
-    // READ BY ID
-    @GetMapping("/{id}")
-    public ResponseEntity<EmployeeDTO> getEmployeeById(
-            @PathVariable int id) {
-
-        EmployeeDTO employee =
-                employeeService.getEmployeeById(id);
-
-        return ResponseEntity.ok(employee);
-    }
-
-    // READ ALL using pagination
     @GetMapping
-    public ResponseEntity<Page<EmployeeDTO>> getAllEmployees(
-            @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "5") int size) {
-
-        Page<EmployeeDTO> employees =
-                employeeService.getAllEmployees(page, size);
-
-        return ResponseEntity.ok(employees);
-    }
-    
-    //Sort basis of salary
-    
-    @GetMapping("/sort/salary")
-    public ResponseEntity<List<EmployeeDTO>> getEmployeesSortedBySalary(
-            @RequestParam(defaultValue = "asc") String direction) {
-
-        List<EmployeeDTO> employees =
-                employeeService.getEmployeesSortedBySalary(direction);
-
-        return ResponseEntity.ok(employees);
-    }
-    
-    
-    
-    @GetMapping("/second-highest-salary")
-    public ResponseEntity<Double> findSecondHighestSalary() {
-
-        Double salary =
-                employeeService.findSecondHighestSalary();
-
-        return ResponseEntity.ok(salary);
-    }
-    
-    
-    @GetMapping("/count")
-    public ResponseEntity<Long> countEmployees() {
-
-        Long count =
-                employeeService.countEmployees();
-
-        return ResponseEntity.ok(count);
+    public ResponseEntity<Page<EmployeeResponseDTO>> getAllEmployees(
+    		@PageableDefault(page = 0, size = 5, sort = "salary", direction = Sort.Direction.DESC) Pageable pageable) {
+        return ResponseEntity.ok(employeeService.getAllEmployees(pageable));
     }
 
-    // UPDATE
+    @GetMapping("/{id}")
+    public ResponseEntity<EmployeeResponseDTO> getEmployeeById(@PathVariable Long id) {
+        return ResponseEntity.ok(employeeService.getEmployeeById(id));
+    }
+
     @PutMapping("/{id}")
-    public ResponseEntity<EmployeeDTO> updateEmployee(
-            @PathVariable int id,
-            @Valid @RequestBody EmployeeDTO employeeDTO) {
-
-        EmployeeDTO updatedEmployee =
-                employeeService.updateEmployee(id, employeeDTO);
-
-        return ResponseEntity.ok(updatedEmployee);
+    public ResponseEntity<EmployeeResponseDTO> updateEmployee(@PathVariable Long id, @Valid @RequestBody EmployeeRequestDTO request) {
+        return ResponseEntity.ok(employeeService.updateEmployee(id, request));
     }
 
-    // DELETE
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteEmployee(
-            @PathVariable int id) {
-
+    public ResponseEntity<Void> deleteEmployee(@PathVariable Long id) {
         employeeService.deleteEmployee(id);
-
         return ResponseEntity.noContent().build();
+    }
+    
+    @GetMapping("/salary")
+    public ResponseEntity<List<EmployeeResponseDTO>> getEmployeesBySalary(@RequestParam double minSalary) {
+        return ResponseEntity.ok(employeeService.getEmployeesBySalary(minSalary));
     }
 }
