@@ -19,6 +19,9 @@ The training is organized day-wise to make the progress easy to follow.
 | Day 06 | Spring MVC | MyGreetingApp |
 | Day 07 | Spring Boot + JPA | ContactApp |
 | Day08  | API Testing & SDLC | ContactApp |
+| Day 09 | Spring Boot Fundamentals | ContactApp Backend |
+| Day 10 | Dependency Injection & H2 Database | Employee Payroll App Backend |
+| Day 11 | Spring Services, Spring JPA , @Query| Employee Payroll App Backend 
 
 ---
 
@@ -330,7 +333,156 @@ Learned the basics of **API testing, API mocking, and SDLC** and how they are us
 ## 🔗 Resources
 
 [View Day 08 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day08)
-## Summary
 
+---
+
+# 📅 Day 09 — Backend w/ Spring Boot | Spring Boot Fundamentals
+
+## 🎯 Focus Area
+
+Introduction to **Spring Boot fundamentals**, including auto-configuration, Spring Boot starters, embedded servers, Spring Controllers, and REST API development.
+
+## 🛠️ Tools & Technologies
+
+- Spring Boot
+- Spring MVC
+- REST API
+- Java
+- Maven
+- Embedded Server
+
+## 📚 Concepts Covered
+
+- Spring Boot fundamentals
+- Spring Boot auto-configuration
+- Spring Boot starters
+- Embedded server
+- Spring Controller
+- REST API basics
+- HTTP methods and endpoints
+- Application configuration
+
+## ✨ Activities
+
+- Bootstrapped a new Spring Boot project
+- Learned Spring Boot auto-configuration and starter dependencies
+- Created Spring Controllers and REST API endpoints
+- Continued building the ContactApp backend using Spring Boot
+- Applied Spring Boot concepts introduced during live classes
+
+## 💡 Key Learning
+
+Learned the fundamentals of **Spring Boot**, including auto-configuration, starters, embedded servers, controllers, and building basic REST APIs for backend applications.
+
+## 🔗 Resources
+
+[View Day 09 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day09)
+
+---
+
+# 📅 Day 10 — Backend w/ Spring Boot | Dependency Injection & H2 Database
+
+## 🎯 Focus Area
+
+Deep dive into **Dependency Injection in Spring Boot** and integration of the **H2 in-memory database** for backend application development.
+
+## 🛠️ Tools & Technologies
+
+- Spring Boot
+- Spring Core
+- Dependency Injection
+- H2 Database
+- Spring Data
+- Java
+- Maven
+
+## 📚 Concepts Covered
+
+- Dependency Injection (DI)
+- Inversion of Control (IoC)
+- Spring Beans
+- Component scanning
+- `@Component`
+- `@Service`
+- `@Repository`
+- `@Autowired`
+- H2 Database
+- H2 database configuration
+- In-memory database integration
+
+## ✨ Activities
+
+- Explored Dependency Injection in Spring Boot
+- Created and configured Spring Beans
+- Practiced constructor-based dependency injection
+- Integrated H2 Database with a Spring Boot application
+- Configured H2 database properties
+- Wired H2 Database into the ContactApp / Employee Payroll App backend
+- Applied Spring Boot and database concepts introduced during live classes
+
+## 💡 Key Learning
+
+Learned how **Dependency Injection and IoC** work in Spring Boot and how to integrate and configure an **H2 in-memory database** for backend application development.
+
+## 🔗 Resources
+
+[View Day 10 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day09)
+
+---
+
+# 📅 Day 11 — Backend w/ Spring Boot | Spring Services, Spring JPA & Spring JDBC
+
+## 🎯 Focus Area
+
+Learned how to design a **service layer** in Spring Boot and work with databases using **Spring JPA** and **Spring JDBC**.
+
+## 🛠️ Tools & Technologies
+
+- Spring Boot
+- Spring REST API
+- Spring Services
+- Spring Data JPA
+- Spring JDBC
+- Hibernate
+- H2 Database
+- Java
+- Maven
+
+## 📚 Concepts Covered
+
+- Spring REST API service-layer design
+- Service layer architecture
+- `@Service`
+- Spring Data JPA
+- JPA repositories
+- Entity mapping
+- `@Entity`
+- `@Id`
+- Repository pattern
+- Spring JDBC
+- `JdbcTemplate`
+- Template-based data access
+- Database CRUD operations
+
+## ✨ Activities
+
+- Designed a service layer for Spring Boot REST APIs
+- Created service classes using `@Service`
+- Created JPA entities and repository interfaces
+- Practiced entity and database table mapping
+- Explored Spring JDBC and `JdbcTemplate`
+- Implemented database access using Spring JPA and Spring JDBC
+- Built the Employee Payroll App backend using Spring JPA / Spring JDBC
+- Applied service-layer and database concepts introduced during live classes
+
+## 💡 Key Learning
+
+Learned how to build a structured **Spring Boot backend using service-layer architecture**, and how to perform database operations using both **Spring Data JPA and Spring JDBC**.
+
+## 🔗 Resources
+
+[View Day 11 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day09)
+
+## Summary
 Built `ContactApp` using **Spring Boot, Spring Data JPA, and H2 Database** to understand how REST APIs interact with a relational database. Implemented complete **CRUD operations** using a layered architecture consisting of **Controller → Service → Repository → H2 Database**.
 ```
