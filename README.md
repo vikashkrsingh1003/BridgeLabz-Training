@@ -21,7 +21,11 @@ The training is organized day-wise to make the progress easy to follow.
 | Day08  | API Testing & SDLC | ContactApp |
 | Day 09 | Spring Boot Fundamentals | ContactApp Backend |
 | Day 10 | Dependency Injection & H2 Database | Employee Payroll App Backend |
-| Day 11 | Spring Services, Spring JPA , @Query| Employee Payroll App Backend 
+| Day 11 | Spring Services, Spring JPA , @Query| Employee Payroll App Backend |
+| Day 12 | Spring Scopes, Logging, Maven & Postman | Employee Payroll App + Address Book App |
+| Day 13 | Spring Security & JWT Authentication | Fundoo Notes App – User Management |
+| Day 14 | Authorization & JPA Relationships | Fundoo Notes App – Notes Management |
+| Day 15 | Pin, Archive, Trash, Search, Filter & Tags | Fundoo Notes App – Organisation Modules |
 
 ---
 
