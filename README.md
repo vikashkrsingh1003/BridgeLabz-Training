@@ -487,6 +487,227 @@ Learned how to build a structured **Spring Boot backend using service-layer arch
 z
 [View Day 11 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day11)
 
-## Summary
-Built `ContactApp` using **Spring Boot, Spring Data JPA, and H2 Database** to understand how REST APIs interact with a relational database. Implemented complete **CRUD operations** using a layered architecture consisting of **Controller → Service → Repository → H2 Database**.
+---
+
+# 📅 Day 12 — Spring Scopes, Logging, Maven & Postman
+
+## 🎯 Focus Area
+
+Working with advanced Spring Boot backend concepts including **Spring Bean Scopes, Logging, Maven, and Postman**.
+
+## 📚 Concepts Covered
+
+### 🌱 Spring Bean Scopes
+
+Understanding different Spring Bean scopes:
+
+- `singleton` - One shared instance per Spring container
+- `prototype` - A new instance whenever the bean is requested
+- `request` - One instance per HTTP request
+- `session` - One instance per HTTP session
+
+### 📝 Logging in Spring Boot
+
+Implemented logging in Spring Boot applications:
+
+- Tracking application execution
+- Debugging backend issues
+- Monitoring application events
+- Recording important information
+
+### 📦 Maven
+
+Worked with Maven for:
+
+- Project build and lifecycle management
+- Dependency management
+- Running Spring Boot applications
+- Managing dependencies using `pom.xml`
+
+### 🧪 Postman
+
+Used Postman for API testing:
+
+- Creating API requests
+- Testing CRUD endpoints
+- Validating request and response data
+- Creating and using Postman collections
+
+## 💡 Key Learning
+
+Learned how Spring Bean Scopes control object lifecycles, how logging helps debug and monitor applications, how Maven manages dependencies and builds, and how Postman can be used to test REST APIs.
+
+## 🚀 Project Work
+
+- Complete **Employee Payroll App** backend
+- Complete **Address Book App** backend
+- Test all endpoints using **Postman collections**
+
+## 🔗 Resources
+
+[View Day 12 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day12)
+
+---
+
+# 📅 Day 13 — Spring Security & JWT Authentication
+
+## 🎯 Focus Area
+
+Working with **Spring Security** and **JWT (JSON Web Token)** authentication to secure Spring Boot applications.
+
+## 📚 Concepts Covered
+
+### 🔐 Spring Security
+
+Recapped Spring Boot fundamentals and learned Spring Security concepts:
+
+- Authentication fundamentals
+- Securing REST APIs
+- Security filters
+- Protecting backend resources
+- Configuring application security
+
+### 🎟️ JWT Authentication
+
+Implemented token-based authentication using **JWT**:
+
+- User login authentication
+- JWT token generation
+- Token-based request verification
+- Securing protected API endpoints
+- Handling authenticated users
+
+## 💡 Key Learning
+
+Learned how Spring Security protects backend applications and how JWT provides a stateless, token-based authentication mechanism for securing REST APIs.
+
+## 🚀 Project Work
+
+### Fundoo Notes App — User Management Module
+
+Implemented:
+
+- User registration
+- User login
+- Password recovery
+- Authentication-related APIs
+
+## 🔗 Resources
+
+[View Day 13 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day13)
+
+---
+
+# 📅 Day 14 — Authorization & JPA for Notes Management
+
+## 🎯 Focus Area
+
+Working with **Authorization** and **JPA entity relationships** to secure and manage notes in the Fundoo Notes application.
+
+## 📚 Concepts Covered
+
+### 🔐 Authentication vs Authorization
+
+Understanding the difference between authentication and authorization:
+
+- **Authentication** - Verifies who the user is
+- **Authorization** - Determines what an authenticated user is allowed to access
+- Secure token-based verification
+- Protecting authorized resources
+
+### 🗃️ JPA Deep Dive
+
+Worked with JPA and entity relationships:
+
+- Entity mapping
+- User and Notes relationships
+- One-to-many relationships
+- Many-to-one relationships
+- Repository-based database operations
+- Managing related entities using JPA
+
+## 💡 Key Learning
+
+Learned how authentication and authorization work together to secure REST APIs and how JPA relationships can be used to connect users with their notes.
+
+## 🚀 Project Work
+
+### Fundoo Notes App
+
+#### 🔐 Authentication & Authorization Module
+
+- Secure protected APIs
+- Validate authenticated users
+- Apply authorization rules
+
+#### 📝 Notes Management Module
+
+- Create notes
+- Delete notes
+- Associate notes with users
+- Manage notes using JPA relationships
+
+## 🔗 Resources
+
+[View Day 14 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day14)
+
+---
+
+# 📅 Day 15 — Organisation Modules: Pin, Archive, Trash, Search & Tags
+
+## 🎯 Focus Area
+
+Working with organisation-oriented REST APIs and implementing **Pin, Archive, Trash, Search, Filter, and Tags/Labels** functionality in the Fundoo Notes application.
+
+## 📚 Concepts Covered
+
+### 📌 Organisation-Oriented REST Endpoints
+
+Designed REST endpoints for managing the state of notes:
+
+- Pin and unpin notes
+- Archive and unarchive notes
+- Move notes to trash
+- Restore notes from trash
+- Apply state-based filtering
+
+### 🔎 Search & Filter Query Design
+
+Implemented query-based note discovery:
+
+- Search notes by relevant content
+- Filter notes based on state
+- Design REST query parameters
+- Combine search and filtering requirements
+
+### 🏷️ Tags / Labels
+
+Worked with tags and labels to organize notes:
+
+- Create and manage labels
+- Associate labels with notes
+- Filter notes using labels
+- Improve note organization
+
+## 💡 Key Learning
+
+Learned how to design state-based REST APIs and query-driven filtering for a real-world notes application. Also understood how Pin, Archive, Trash, Search, and Tags work together to provide efficient note organization.
+
+## 🚀 Project Work
+
+### Fundoo Notes App
+
+Implemented the following modules:
+
+- 📌 **Pin / Unpin Module**
+- 📦 **Archive / Unarchive Module**
+- 🗑️ **Trash / Restore Module**
+- 🔎 **Search & Filter Module**
+- 🏷️ **Tags / Labels Management Module**
+
+## 🔗 Resources
+
+[View Day 15 Directory](./)
+
+
 ```
