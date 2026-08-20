@@ -376,7 +376,7 @@ Learned the fundamentals of **Spring Boot**, including auto-configuration, start
 
 ## 🔗 Resources
 
-[View Day 09 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day09)
+[View Day 09 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day10)
 
 ---
 
@@ -480,8 +480,8 @@ Learned how to design a **service layer** in Spring Boot and work with databases
 Learned how to build a structured **Spring Boot backend using service-layer architecture**, and how to perform database operations using both **Spring Data JPA and Spring JDBC**.
 
 ## 🔗 Resources
-
-[View Day 11 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day09)
+z
+[View Day 11 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day11)
 
 ## Summary
 Built `ContactApp` using **Spring Boot, Spring Data JPA, and H2 Database** to understand how REST APIs interact with a relational database. Implemented complete **CRUD operations** using a layered architecture consisting of **Controller → Service → Repository → H2 Database**.
