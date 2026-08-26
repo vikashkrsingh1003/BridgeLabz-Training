@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      routes:
+
+        - id: user-auth-service
+          uri: lb://USER-AUTH-SERVICE
+          predicates:
+            - Path=/auth/**
+
+        - id: notes-service
+          uri: lb://NOTES-SERVICE
+          predicates:
+            - Path=/notes/**
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+    register-with-eureka: true
+    fetch-registry: true
+
+  instance:
+    prefer-ip-address: true
