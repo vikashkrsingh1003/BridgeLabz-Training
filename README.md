@@ -26,6 +26,11 @@ The training is organized day-wise to make the progress easy to follow.
 | Day 13 | Spring Security & JWT Authentication | Fundoo Notes App – User Management |
 | Day 14 | Authorization & JPA Relationships | Fundoo Notes App – Notes Management |
 | Day 15 | Pin, Archive, Trash, Search, Filter & Tags | Fundoo Notes App – Organisation Modules |
+| Day 16 | JMS & Redis Caching | Fundoo Notes App – Reminder & Notification, Token Caching |
+| Day 17 | RabbitMQ & Spring Batch | Fundoo Notes App – File Attachment Module |
+| Day 18 | REST API Patterns, Global Exception Handling, AOP & Spring Cloud | Fundoo Notes App – Backend Consolidation |
+| Day 19 | Monolith vs Microservices & Spring Boot Microservices | Fundoo Notes App – User Management & Authentication Microservices |
+| Day 20 | Service Registry (Eureka) & Microservices Completion | Fundoo Notes App – Complete Microservices Architecture |
 
 ---
 
