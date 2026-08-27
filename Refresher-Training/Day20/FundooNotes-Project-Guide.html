@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FundooNotes Project Guide</title>
+<style>
+@page { size: A4; margin: 18mm 16mm; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #202124; line-height: 1.45; font-size: 10.5pt; }
+h1 { color: #173f5f; font-size: 27pt; margin: 0 0 8pt; }
+h2 { color: #20639b; border-bottom: 1px solid #b8c7d1; padding-bottom: 4pt; margin-top: 20pt; }
+h3 { color: #3b5366; margin-bottom: 4pt; }
+.subtitle { color: #5f6b73; font-size: 14pt; margin-bottom: 30pt; }
+.cover { padding-top: 55mm; page-break-after: always; }
+.callout { background: #eef6f8; border-left: 4px solid #3caea3; padding: 9pt 12pt; margin: 10pt 0; }
+.warning { background: #fff5e6; border-left: 4px solid #f6a01a; padding: 9pt 12pt; margin: 10pt 0; }
+code, pre { font-family: Menlo, Monaco, monospace; font-size: 9pt; }
+pre { background: #f4f6f7; border: 1px solid #d8dee2; padding: 9pt; white-space: pre-wrap; }
+table { border-collapse: collapse; width: 100%; margin: 8pt 0 14pt; }
+th { background: #173f5f; color: white; text-align: left; }
+th, td { border: 1px solid #cbd5da; padding: 6pt; vertical-align: top; }
+.small { color: #65727a; font-size: 9pt; }
+.endpoint { font-family: Menlo, Monaco, monospace; color: #173f5f; }
+.page-break { page-break-before: always; }
+ul { margin-top: 4pt; }
+</style>
+</head>
+<body>
+<section class="cover">
+<h1>FundooNotes</h1>
+<div class="subtitle">Project Architecture, Configuration and Postman Testing Guide</div>
+<p><strong>Application type:</strong> Spring Boot microservices</p>
+<p><strong>Version context:</strong> Spring Boot 3.5.x, Java 17-compatible modules</p>
+<p><strong>Document purpose:</strong> Explain the running system, required infrastructure, startup sequence, authentication flow, password-reset email flow, and Postman endpoints.</p>
+<div class="callout"><strong>Security note:</strong> Credentials are intentionally redacted from this guide. Keep the real <code>.env</code> file local and never commit it.</div>
+</section>
+
+<h2>1. System Overview</h2>
+<p>FundooNotes is a note-management application split into independently runnable Spring Boot services. Eureka provides service discovery, the API Gateway provides the client entry point, and separate services own authentication, notes, reminders, and administration.</p>
+<table><tr><th>Component</th><th>Port</th><th>Responsibility</th></tr>
+<tr><td>Eureka Server</td><td>8761</td><td>Service registry and discovery</td></tr>
+<tr><td>API Gateway</td><td>8080</td><td>Single API entry point, routing and circuit breakers</td></tr>
+<tr><td>Auth Service</td><td>8081</td><td>Registration, login, JWT and password reset tokens</td></tr>
+<tr><td>Notes Service</td><td>8082</td><td>Notes, tags, search, state changes and export</td></tr>
+<tr><td>Reminder Service</td><td>8083</td><td>RabbitMQ consumers and Gmail email delivery</td></tr>
+<tr><td>Admin Server</td><td>8085</td><td>Spring Boot Admin monitoring</td></tr>
+</table>
+
+<h2>2. Request Flow</h2>
+<ol>
+<li>Postman sends requests to <code>http://localhost:8080</code>.</li>
+<li>The API Gateway routes <code>/auth/**</code> to auth-service and <code>/notes/**</code> or <code>/tags/**</code> to notes-service through Eureka.</li>
+<li>Auth service stores users and reset tokens in MySQL and returns JWT tokens.</li>
+<li>Notes service validates JWTs and stores notes/tags in MySQL. It uses Redis for data operations configured by the service.</li>
+<li>Notes and auth publish messages to RabbitMQ. Reminder service consumes them.</li>
+<li>Reminder service sends password-reset and note-reminder emails through Gmail SMTP.</li>
+</ol>
+
+<h2>3. Required Infrastructure</h2>
+<table><tr><th>Dependency</th><th>Address</th><th>Purpose</th></tr>
+<tr><td>MySQL</td><td><code>localhost:3306</code></td><td>Users, reset tokens, notes and tags</td></tr>
+<tr><td>Redis</td><td><code>localhost:6379</code></td><td>Redis integration used by notes-service</td></tr>
+<tr><td>RabbitMQ</td><td><code>localhost:5672</code></td><td>Reminder and password-reset messaging</td></tr>
+</table>
+<p>RabbitMQ management UI is available at <code>http://localhost:15672</code>. Redis and RabbitMQ may run in Docker; MySQL may run natively on localhost.</p>
+
+<h2>4. Environment Configuration</h2>
+<p>The root <code>.env</code> contains local values consumed through Spring placeholders. The important keys are:</p>
+<pre>DB_URL=jdbc:mysql://localhost:3306/fundoonotesdb
+DB_USERNAME=&lt;mysql-user&gt;
+DB_PASSWORD=&lt;mysql-password&gt;
+JWT_SECRET=&lt;long-random-secret&gt;
+RABBIT_MQ_HOST=localhost
+RABBIT_MQ_PORT=5672
+RABBIT_MQ_USERNAME=guest
+RABBIT_MQ_PASSWORD=guest
+FUNDOO_MAIL_USERNAME=&lt;gmail-address&gt;
+FUNDOO_MAIL_PASSWORD=&lt;google-app-password&gt;</pre>
+<div class="warning"><strong>Gmail:</strong> use a Google App Password, not the normal Gmail account password. Store the 16-character value without spaces or quotes, then restart reminder-service.</div>
+
+<h2>5. Startup Order</h2>
+<ol>
+<li>Start MySQL and create database <code>fundoonotesdb</code>.</li>
+<li>Start Docker Redis and RabbitMQ.</li>
+<li>Start <code>eureka-server</code>.</li>
+<li>Start <code>auth-service</code>, <code>notes-service</code> and <code>reminder-service</code>.</li>
+<li>Start <code>api-gateway</code> and <code>admin-server</code>.</li>
+</ol>
+<p>Run each service in a separate terminal:</p>
+<pre>cd eureka-server && sh ./mvnw spring-boot:run
+cd auth-service && sh ./mvnw spring-boot:run
+cd notes-service && sh ./mvnw spring-boot:run
+cd reminder-service && sh ./mvnw spring-boot:run
+cd api-gateway && sh ./mvnw spring-boot:run
+cd admin-server && sh ./mvnw spring-boot:run</pre>
+
+<h2>6. Authentication Flow</h2>
+<p>Register or log in first. The response contains a JWT. In Postman, use the token as:</p>
+<pre>Authorization: Bearer YOUR_JWT_TOKEN</pre>
+<p>Auth endpoints are public. Notes and tags endpoints require the JWT.</p>
+
+<h2 class="page-break">7. Postman Endpoints</h2>
+<p><strong>Base URL:</strong> <code>http://localhost:8080</code></p>
+<h3>Register</h3><p class="endpoint">POST /auth/register</p><pre>{
+  "email": "user@example.com",
+  "password": "Password123",
+  "name": "Test User"
+}</pre>
+<h3>Login</h3><p class="endpoint">POST /auth/login</p><pre>{
+  "email": "user@example.com",
+  "password": "Password123"
+}</pre>
+<h3>Forgot Password</h3><p class="endpoint">POST /auth/forgot-password</p><pre>{
+  "email": "user@example.com"
+}</pre><p>Returns <code>200 OK</code> after the request is accepted. The token is delivered asynchronously by email.</p>
+<h3>Reset Password</h3><p class="endpoint">POST /auth/reset-password</p><pre>{
+  "token": "TOKEN_FROM_EMAIL",
+  "newPassword": "NewPassword123"
+}</pre>
+
+<h3>Create Note</h3><p class="endpoint">POST /notes</p><pre>{
+  "title": "My first note",
+  "content": "This is my note",
+  "reminderAt": "2026-08-30T10:00:00"
+}</pre>
+<h3>List Notes</h3><p class="endpoint">GET /notes</p><p>Optional parameters: <code>title</code>, <code>state</code>, <code>pinned</code>.</p><pre>GET /notes?title=first
+GET /notes?state=ACTIVE
+GET /notes?pinned=true</pre>
+<h3>Delete Note</h3><p class="endpoint">DELETE /notes/{id}</p>
+<h3>Archive, Trash, Restore and Pin</h3><p class="endpoint">PATCH /notes/{id}/archive<br>PATCH /notes/{id}/trash<br>PATCH /notes/{id}/restore<br>PATCH /notes/{id}/pin</p>
+<h3>Export Notes</h3><p class="endpoint">GET /notes/export</p><p>Downloads the active notes as an Excel file.</p>
+<h3>Create Tag</h3><p class="endpoint">POST /tags</p><pre>{
+  "name": "Work"
+}</pre>
+<h3>List Tags</h3><p class="endpoint">GET /tags</p>
+<h3>Delete Tag</h3><p class="endpoint">DELETE /tags/{id}</p>
+<h3>Add or Remove Tag</h3><p class="endpoint">POST /notes/{noteId}/tags/{tagId}<br>DELETE /notes/{noteId}/tags/{tagId}</p>
+
+<h2>8. Direct Service URLs</h2>
+<p>Use the gateway for normal testing. Direct URLs help isolate a service:</p>
+<table><tr><th>Service</th><th>Direct base URL</th></tr>
+<tr><td>Auth</td><td><code>http://localhost:8081</code></td></tr>
+<tr><td>Notes</td><td><code>http://localhost:8082</code></td></tr>
+<tr><td>Reminder</td><td><code>http://localhost:8083</code></td></tr>
+</table>
+<p>Example direct request: <code>POST http://localhost:8081/auth/login</code>.</p>
+
+<h2>9. Health Checks and Troubleshooting</h2>
+<pre>GET http://localhost:8761/actuator/health
+GET http://localhost:8080/actuator/health
+GET http://localhost:8081/actuator/health
+GET http://localhost:8082/actuator/health
+GET http://localhost:8083/actuator/health
+GET http://localhost:8085/actuator/health</pre>
+<ul>
+<li><strong>Gateway returns 503:</strong> check that auth/notes are running and registered in Eureka.</li>
+<li><strong>Auth or notes cannot start:</strong> check MySQL on port 3306 and database name.</li>
+<li><strong>Reminder health is DOWN:</strong> inspect the <code>mail</code> component. A Gmail <code>535-5.7.8</code> error means the App Password is invalid, belongs to another account, or was not loaded after restart.</li>
+<li><strong>Rabbit listener errors:</strong> confirm RabbitMQ is running on port 5672 and inspect queues in the management UI.</li>
+<li><strong>Port already in use:</strong> find the process with <code>lsof -nP -iTCP:PORT -sTCP:LISTEN</code> before starting another instance.</li>
+</ul>
+
+<h2>10. Password Reset Email Flow</h2>
+<ol>
+<li>Client calls <code>POST /auth/forgot-password</code>.</li>
+<li>Auth service creates or updates a reset token in MySQL.</li>
+<li>Auth publishes <code>email|resetToken</code> to RabbitMQ queue <code>password-reset-queue</code>.</li>
+<li>Reminder service consumes the queue.</li>
+<li>Reminder service sends the token using Gmail SMTP.</li>
+<li>Client submits the emailed token to <code>POST /auth/reset-password</code>.</li>
+</ol>
+<div class="callout"><strong>Expected test result:</strong> the forgot-password API may return immediately with <code>200 OK</code>; email delivery happens asynchronously. Confirm delivery in the recipient inbox and check reminder-service logs if it does not arrive.</div>
+
+<h2>11. Useful URLs</h2>
+<ul><li>Eureka dashboard: <code>http://localhost:8761</code></li><li>API Gateway health: <code>http://localhost:8080/actuator/health</code></li><li>RabbitMQ management: <code>http://localhost:15672</code></li><li>Spring Boot Admin: <code>http://localhost:8085</code></li></ul>
+<p class="small">Generated for the local FundooNotes workspace. No application source or configuration was changed to create this guide.</p>
+</body>
+</html>
