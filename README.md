@@ -707,7 +707,279 @@ Implemented the following modules:
 
 ## 🔗 Resources
 
-[View Day 15 Directory](./)
+[View Day 15 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day15)
 
+---
+
+# 📅 Day 16 — JMS (Asynchronous Messaging) & Redis Caching
+
+## 🎯 Focus Area
+
+Working with asynchronous messaging using **JMS (Java Message Service)** and improving application performance using **Redis caching**.
+
+## 📚 Concepts Covered
+
+### 📩 JMS (Java Message Service)
+
+Implemented asynchronous, non-blocking background processing using JMS.
+
+- JMS (Java Message Service) fundamentals
+- Asynchronous messaging
+- Non-blocking background processing
+- Message producers and consumers
+- Background processing using JMS
+
+### ⚡ Redis Caching
+
+Implemented Redis-based token caching to improve authorization performance.
+
+- Redis fundamentals
+- Token caching
+- Storing authentication tokens in Redis
+- Retrieving cached tokens
+- Improving authorization performance using caching
+
+## 💡 Key Learning
+
+Learned how JMS can be used for asynchronous and non-blocking background processing and how Redis caching can improve authentication and authorization performance.
+
+## 🔗 Resources
+
+[View Day 16 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day16)
+
+---
+
+# 📅 Day 17 — RabbitMQ & Spring Batch (Excel)
+
+## 🎯 Focus Area
+
+Working with **RabbitMQ** for message queuing and **Spring Batch** for batch processing and Excel import/export operations.
+
+## 📚 Concepts Covered
+
+### 🐇 RabbitMQ
+
+Explored RabbitMQ fundamentals for asynchronous message queuing and background processing.
+
+- RabbitMQ fundamentals
+- Message queues
+- Producers and consumers
+- Sending messages through queues
+- Receiving and processing messages
+- Asynchronous/background operations
+
+### 📊 Spring Batch & Excel
+
+Worked with Spring Batch for processing large amounts of data and Excel import/export operations.
+
+- Spring Batch fundamentals
+- Batch processing
+- Reading Excel data
+- Writing Excel data
+- Excel import/export
+- Processing data in batches
+
+## 💡 Key Learning
+
+Learned how RabbitMQ can be used for smooth asynchronous communication and how Spring Batch can be used for efficient batch processing and Excel import/export operations.
+
+## 🔗 Resources
+
+[View Day 17 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day17)
+
+---
+
+# 📅 Day 18 — REST API Patterns, Global Exception Handling, AOP & Spring Cloud
+
+## 🎯 Focus Area
+
+Applying advanced Spring Boot concepts including **REST API design patterns, global exception handling, AOP (Aspect-Oriented Programming), and Spring Cloud**.
+
+## 📚 Concepts Covered
+
+### 🌐 REST API Patterns
+
+Applied REST API design patterns to build clean and maintainable APIs.
+
+- REST API design principles
+- HTTP methods
+- Request and response handling
+- RESTful endpoint design
+- Spring Scopes revisited
+
+### 🔄 Mapping Methods
+
+Worked with mapping between DTOs and Entities.
+
+- DTO (Data Transfer Object)
+- Entity
+- DTO → Entity mapping
+- Entity → DTO mapping
+- Separating API models from database models
+
+### ⚠️ Global Exception Handling
+
+Implemented centralized exception handling for Spring Boot applications.
+
+- Global exception handling
+- `@ControllerAdvice`
+- `@ExceptionHandler`
+- Custom exceptions
+- Consistent error responses
+
+### 🧩 AOP (Aspect-Oriented Programming)
+
+Explored AOP for handling cross-cutting concerns.
+
+- Aspect-Oriented Programming
+- Logging
+- Cross-cutting concerns
+- Separation of business logic and supporting concerns
+- Applying logging using AOP
+
+### ☁️ Spring Cloud
+
+Introduction to Spring Cloud and its role in building distributed applications.
+
+- Spring Cloud fundamentals
+- Microservices support
+- Distributed application concepts
+- Service-to-service communication concepts
+
+## 💡 Key Learning
+
+Learned how REST API patterns, DTO mapping, global exception handling, AOP, and Spring Cloud can be combined to create a cleaner, more maintainable, and production-ready backend architecture.
+
+## 🔗 Resources
+
+[View Day 18 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day18)
+
+---
+
+# 📅 Day 19 — Monolith vs Microservices & Spring Boot Microservices
+
+## 🎯 Focus Area
+
+Understanding **Monolithic and Microservices architectures** and beginning the decomposition of the Fundoo Notes application into independent microservices.
+
+## 📚 Concepts Covered
+
+### 🏗️ Monolith vs Microservices
+
+Compared monolithic architecture with microservices architecture.
+
+- Monolithic architecture
+- Microservices architecture
+- Advantages and disadvantages of monoliths
+- Advantages and disadvantages of microservices
+- Architecture trade-offs
+- When to use monolithic architecture
+- When to use microservices architecture
+
+### 🔧 Spring Boot Microservices
+
+Learned the project structure and fundamentals required to build Spring Boot microservices.
+
+- Spring Boot microservice structure
+- Independent services
+- Service responsibilities
+- Inter-service communication
+- Service separation
+- Independent deployment concepts
+
+### 🚪 API Gateway
+
+Explored the purpose of an API Gateway in a microservices architecture.
+
+- API Gateway fundamentals
+- Request routing
+- Centralized entry point
+- Routing requests to appropriate services
+- Microservices communication through gateway
+
+### 📝 Fundoo Notes Microservices
+
+Started decomposing the Fundoo Notes application into microservices.
+
+Initial services included:
+
+- User Management
+- Authentication
+
+## 💡 Key Learning
+
+Learned the differences between monolithic and microservices architectures and started converting the Fundoo Notes application into a microservices-based architecture with independent services and API Gateway routing.
+
+## 🔗 Resources
+
+[View Day 19 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day19)
+
+---
+
+# 📅 Day 20 — Service Registry (Eureka) & Microservices Completion
+
+## 🎯 Focus Area
+
+Working with **Service Registry using Eureka** and completing the microservices architecture for the Fundoo Notes application.
+
+## 📚 Concepts Covered
+
+### 🔎 Service Registry with Eureka
+
+Implemented service discovery using Eureka.
+
+- Service Registry
+- Eureka Server
+- Eureka Client
+- Service discovery
+- Service registration
+- Registering microservices with Eureka
+- Discovering services dynamically
+
+### 🧩 Microservices Architecture
+
+Consolidated the concepts learned throughout the microservices module.
+
+- Microservices architecture
+- Independent services
+- Inter-service communication
+- Service discovery
+- API Gateway
+- Distributed application structure
+- Communication between services
+
+### 📝 Fundoo Notes Microservices
+
+Completed the major microservices of the Fundoo Notes application.
+
+The application was divided into:
+
+- User Management
+- Authentication & Authorization
+- Notes Management
+- Search & Filter
+- Tags / Labels Management
+- Reminder & Notification
+
+### 🚀 Final Microservices-Based Application
+
+Completed the Fundoo Notes application using a microservices-based architecture.
+
+- Service Registry using Eureka
+- Independent microservices
+- Authentication and authorization
+- Notes management
+- Search and filtering
+- Tags and labels
+- Reminder and notification
+- Inter-service communication
+
+## 💡 Key Learning
+
+Learned how Eureka provides service discovery in a microservices architecture and consolidated the complete microservices concepts by building the Fundoo Notes application as a distributed, microservices-based system.
+
+## 🔗 Resources
+
+[View Day 20 Directory](https://github.com/vikashkrsingh1003/BridgeLabz-Training/tree/Refresher-Training/Refresher-Training/Day20)
 
 ```
